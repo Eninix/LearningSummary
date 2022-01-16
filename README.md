@@ -4,7 +4,8 @@
 
 ## ***目録：***
 
-+ [Gitの操作](./Git/Git.md)
++ [Gitの操作](./Git/git.md)
++ [Github-Cliの操作](./Github/github-cli.md)
 
 
 

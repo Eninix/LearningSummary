@@ -1,5 +1,7 @@
 # Git的使用
 
+-----
+
 ## 1.安装
 
 [下载地址](https://git-scm.com/downloads)：https://git-scm.com/downloads
