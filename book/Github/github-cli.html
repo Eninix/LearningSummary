@@ -75,7 +75,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../index.html">介绍</a></li><li class="chapter-item expanded affix "><li class="part-title">Git笔记</li><li class="chapter-item expanded "><a href="../Git/git.html"><strong aria-hidden="true">1.</strong> Git的操作</a></li><li class="chapter-item expanded "><a href="../Github/github-cli.html" class="active"><strong aria-hidden="true">2.</strong> Github-Cli的操作</a></li><li class="chapter-item expanded affix "><li class="part-title">C++笔记</li><li class="chapter-item expanded "><a href="../Cpp/Cpp_base/Cpp基础入门.html"><strong aria-hidden="true">3.</strong> Cpp基础</a></li><li class="chapter-item expanded "><a href="../Cpp/Cpp_core/Cpp核心编程.html"><strong aria-hidden="true">4.</strong> Cpp核心</a></li><li class="chapter-item expanded "><a href="../Cpp/Cpp_more/Cpp提高编程.html"><strong aria-hidden="true">5.</strong> Cpp提高</a></li><li class="chapter-item expanded affix "><li class="part-title">Redis笔记</li><li class="chapter-item expanded "><a href="../Redis/redis.html"><strong aria-hidden="true">6.</strong> Redis的操作</a></li></ol>
+                <ol class="chapter"><li class="chapter-item affix "><a href="../index.html">介绍</a></li><li class="chapter-item affix "><li class="part-title">Git笔记</li><li class="chapter-item "><a href="../Git/git.html"><strong aria-hidden="true">1.</strong> Git的操作</a></li><li class="chapter-item expanded "><a href="../Github/github-cli.html" class="active"><strong aria-hidden="true">2.</strong> Github-Cli的操作</a></li><li class="chapter-item affix "><li class="part-title">C++笔记</li><li class="chapter-item "><a href="../Cpp/Cpp_base/Cpp基础入门.html"><strong aria-hidden="true">3.</strong> Cpp基础</a></li><li class="chapter-item "><a href="../Cpp/Cpp_core/Cpp核心编程.html"><strong aria-hidden="true">4.</strong> Cpp核心</a></li><li class="chapter-item "><a href="../Cpp/Cpp_more/Cpp提高编程.html"><strong aria-hidden="true">5.</strong> Cpp提高</a></li><li class="chapter-item affix "><li class="part-title">Redis笔记</li><li class="chapter-item "><a href="../Redis/redis.html"><strong aria-hidden="true">6.</strong> Redis的操作</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -138,7 +138,30 @@
                 <div id="content" class="content">
                     <main>
                         <h1 id="github-cli的使用"><a class="header" href="#github-cli的使用">Github-Cli的使用</a></h1>
-<hr />
+<ul>
+<li><a href="#github-cli%E7%9A%84%E4%BD%BF%E7%94%A8">Github-Cli的使用</a>
+<ul>
+<li><a href="#1%E5%AE%98%E7%BD%91%E5%8F%8A%E4%B8%8B%E8%BD%BD%E5%9C%B0%E5%9D%80%E4%B8%8E%E5%AE%89%E8%A3%85%E6%89%8B%E6%AE%B5">1.官网及下载地址与安装手段</a></li>
+<li><a href="#2%E9%A6%96%E6%AC%A1%E8%BF%90%E8%A1%8C">2.首次运行</a></li>
+<li><a href="#3%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C">3.基础操作</a>
+<ul>
+<li><a href="#31%E5%85%8B%E9%9A%86%E4%BB%93%E5%BA%93gh-repo-clone">3.1克隆仓库（gh repo clone）</a></li>
+<li><a href="#32%E6%89%93%E5%BC%80%E5%BD%93%E5%89%8Dgithub%E5%BA%93%E7%9A%84%E7%BD%91%E9%A1%B5">3.2打开当前github库的网页</a></li>
+<li><a href="#33%E6%9F%A5%E7%9C%8B%E6%9F%90%E4%B8%AA%E5%BA%93%E7%9A%84readme">3.3查看某个库的README</a></li>
+</ul>
+</li>
+<li><a href="#4%E5%8F%91%E5%B8%83pull-requests">4发布pull requests</a>
+<ul>
+<li><a href="#41%E5%85%88%E5%9C%A8%E5%88%86%E6%94%AFtypo%E9%9A%8F%E4%BE%BF%E6%94%B9%E4%B8%80%E4%B8%8B%E6%96%87%E4%BB%B6%E5%B9%B6push">4.1先在分支typo,随便改一下文件，并push</a></li>
+<li><a href="#42%E4%BD%BF%E7%94%A8gh-pr-creat%E5%88%9B%E5%BB%BA%E4%B8%80%E4%B8%AApull-requests">4.2使用gh pr creat创建一个pull requests</a></li>
+<li><a href="#43%E5%90%88%E5%B9%B6pull-requests">4.3合并pull requests</a></li>
+</ul>
+</li>
+<li><a href="#5%E5%8F%91%E5%B8%83issues">5.发布issues</a></li>
+<li><a href="#6%E5%86%99%E5%9C%A8%E6%9C%80%E5%BE%8C">6.写在最後</a></li>
+</ul>
+</li>
+</ul>
 <h2 id="1官网及下载地址与安装手段"><a class="header" href="#1官网及下载地址与安装手段">1.官网及下载地址与安装手段</a></h2>
 <p><a href="https://cli.github.com/">官网：</a>https://cli.github.com/</p>
 <p><a href="https://github.com/cli/cli#installation">官方对各个系统的下载教程：</a>https://github.com/cli/cli#installation</p>

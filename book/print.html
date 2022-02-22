@@ -76,7 +76,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded affix "><a href="index.html">介绍</a></li><li class="chapter-item expanded affix "><li class="part-title">Git笔记</li><li class="chapter-item expanded "><a href="Git/git.html"><strong aria-hidden="true">1.</strong> Git的操作</a></li><li class="chapter-item expanded "><a href="Github/github-cli.html"><strong aria-hidden="true">2.</strong> Github-Cli的操作</a></li><li class="chapter-item expanded affix "><li class="part-title">C++笔记</li><li class="chapter-item expanded "><a href="Cpp/Cpp_base/Cpp基础入门.html"><strong aria-hidden="true">3.</strong> Cpp基础</a></li><li class="chapter-item expanded "><a href="Cpp/Cpp_core/Cpp核心编程.html"><strong aria-hidden="true">4.</strong> Cpp核心</a></li><li class="chapter-item expanded "><a href="Cpp/Cpp_more/Cpp提高编程.html"><strong aria-hidden="true">5.</strong> Cpp提高</a></li><li class="chapter-item expanded affix "><li class="part-title">Redis笔记</li><li class="chapter-item expanded "><a href="Redis/redis.html"><strong aria-hidden="true">6.</strong> Redis的操作</a></li></ol>
+                <ol class="chapter"><li class="chapter-item affix "><a href="index.html">介绍</a></li><li class="chapter-item affix "><li class="part-title">Git笔记</li><li class="chapter-item "><a href="Git/git.html"><strong aria-hidden="true">1.</strong> Git的操作</a></li><li class="chapter-item "><a href="Github/github-cli.html"><strong aria-hidden="true">2.</strong> Github-Cli的操作</a></li><li class="chapter-item affix "><li class="part-title">C++笔记</li><li class="chapter-item "><a href="Cpp/Cpp_base/Cpp基础入门.html"><strong aria-hidden="true">3.</strong> Cpp基础</a></li><li class="chapter-item "><a href="Cpp/Cpp_core/Cpp核心编程.html"><strong aria-hidden="true">4.</strong> Cpp核心</a></li><li class="chapter-item "><a href="Cpp/Cpp_more/Cpp提高编程.html"><strong aria-hidden="true">5.</strong> Cpp提高</a></li><li class="chapter-item affix "><li class="part-title">Redis笔记</li><li class="chapter-item "><a href="Redis/redis.html"><strong aria-hidden="true">6.</strong> Redis的操作</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -179,7 +179,30 @@ git merge 需要被分支名 # (合并分支)
 文件名.后缀					(不忽略某个具体文件)
 </code></pre>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="github-cli的使用"><a class="header" href="#github-cli的使用">Github-Cli的使用</a></h1>
-<hr />
+<ul>
+<li><a href="Github/github-cli.html#github-cli%E7%9A%84%E4%BD%BF%E7%94%A8">Github-Cli的使用</a>
+<ul>
+<li><a href="Github/github-cli.html#1%E5%AE%98%E7%BD%91%E5%8F%8A%E4%B8%8B%E8%BD%BD%E5%9C%B0%E5%9D%80%E4%B8%8E%E5%AE%89%E8%A3%85%E6%89%8B%E6%AE%B5">1.官网及下载地址与安装手段</a></li>
+<li><a href="Github/github-cli.html#2%E9%A6%96%E6%AC%A1%E8%BF%90%E8%A1%8C">2.首次运行</a></li>
+<li><a href="Github/github-cli.html#3%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C">3.基础操作</a>
+<ul>
+<li><a href="Github/github-cli.html#31%E5%85%8B%E9%9A%86%E4%BB%93%E5%BA%93gh-repo-clone">3.1克隆仓库（gh repo clone）</a></li>
+<li><a href="Github/github-cli.html#32%E6%89%93%E5%BC%80%E5%BD%93%E5%89%8Dgithub%E5%BA%93%E7%9A%84%E7%BD%91%E9%A1%B5">3.2打开当前github库的网页</a></li>
+<li><a href="Github/github-cli.html#33%E6%9F%A5%E7%9C%8B%E6%9F%90%E4%B8%AA%E5%BA%93%E7%9A%84readme">3.3查看某个库的README</a></li>
+</ul>
+</li>
+<li><a href="Github/github-cli.html#4%E5%8F%91%E5%B8%83pull-requests">4发布pull requests</a>
+<ul>
+<li><a href="Github/github-cli.html#41%E5%85%88%E5%9C%A8%E5%88%86%E6%94%AFtypo%E9%9A%8F%E4%BE%BF%E6%94%B9%E4%B8%80%E4%B8%8B%E6%96%87%E4%BB%B6%E5%B9%B6push">4.1先在分支typo,随便改一下文件，并push</a></li>
+<li><a href="Github/github-cli.html#42%E4%BD%BF%E7%94%A8gh-pr-creat%E5%88%9B%E5%BB%BA%E4%B8%80%E4%B8%AApull-requests">4.2使用gh pr creat创建一个pull requests</a></li>
+<li><a href="Github/github-cli.html#43%E5%90%88%E5%B9%B6pull-requests">4.3合并pull requests</a></li>
+</ul>
+</li>
+<li><a href="Github/github-cli.html#5%E5%8F%91%E5%B8%83issues">5.发布issues</a></li>
+<li><a href="Github/github-cli.html#6%E5%86%99%E5%9C%A8%E6%9C%80%E5%BE%8C">6.写在最後</a></li>
+</ul>
+</li>
+</ul>
 <h2 id="1官网及下载地址与安装手段"><a class="header" href="#1官网及下载地址与安装手段">1.官网及下载地址与安装手段</a></h2>
 <p><a href="https://cli.github.com/">官网：</a>https://cli.github.com/</p>
 <p><a href="https://github.com/cli/cli#installation">官方对各个系统的下载教程：</a>https://github.com/cli/cli#installation</p>
@@ -234,6 +257,134 @@ gh issue status # 查看自己发布的issues
 <p>常用操作大概就这些，github-cli的纯命令行操作还是很好用的。gthub-cli配合git使用还是挺方便的。</p>
 <p>https://cli.github.com/manual/ 这里还有更多操作。<del>不过是英语</del></p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="c基础入门"><a class="header" href="#c基础入门">C++基础入门</a></h1>
+<ul>
+<li><a href="Cpp/Cpp_base/Cpp%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8.html#c%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8">C++基础入门</a>
+<ul>
+<li><a href="Cpp/Cpp_base/Cpp%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8.html#1-c%E5%88%9D%E8%AF%86">1 C++初识</a>
+<ul>
+<li><a href="Cpp/Cpp_base/Cpp%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8.html#11--%E7%AC%AC%E4%B8%80%E4%B8%AAc%E7%A8%8B%E5%BA%8F">1.1  第一个C++程序</a>
+<ul>
+<li><a href="Cpp/Cpp_base/Cpp%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8.html#111-%E5%88%9B%E5%BB%BA%E9%A1%B9%E7%9B%AE">1.1.1 创建项目</a></li>
+<li><a href="Cpp/Cpp_base/Cpp%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8.html#112-%E5%88%9B%E5%BB%BA%E6%96%87%E4%BB%B6">1.1.2 创建文件</a></li>
+<li><a href="Cpp/Cpp_base/Cpp%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8.html#113-%E7%BC%96%E5%86%99%E4%BB%A3%E7%A0%81">1.1.3 编写代码</a></li>
+<li><a href="Cpp/Cpp_base/Cpp%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8.html#114-%E8%BF%90%E8%A1%8C%E7%A8%8B%E5%BA%8F">1.1.4 运行程序</a></li>
+</ul>
+</li>
+<li><a href="Cpp/Cpp_base/Cpp%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8.html#12-%E6%B3%A8%E9%87%8A">1.2 注释</a></li>
+<li><a href="Cpp/Cpp_base/Cpp%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8.html#13-%E5%8F%98%E9%87%8F">1.3 变量</a></li>
+<li><a href="Cpp/Cpp_base/Cpp%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8.html#14--%E5%B8%B8%E9%87%8F">1.4  常量</a></li>
+<li><a href="Cpp/Cpp_base/Cpp%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8.html#15-%E5%85%B3%E9%94%AE%E5%AD%97">1.5 关键字</a></li>
+<li><a href="Cpp/Cpp_base/Cpp%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8.html#16-%E6%A0%87%E8%AF%86%E7%AC%A6%E5%91%BD%E5%90%8D%E8%A7%84%E5%88%99">1.6 标识符命名规则</a></li>
+</ul>
+</li>
+<li><a href="Cpp/Cpp_base/Cpp%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8.html#2-%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B">2 数据类型</a>
+<ul>
+<li><a href="Cpp/Cpp_base/Cpp%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8.html#21-%E6%95%B4%E5%9E%8B">2.1 整型</a></li>
+<li><a href="Cpp/Cpp_base/Cpp%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8.html#22-sizeof%E5%85%B3%E9%94%AE%E5%AD%97">2.2 sizeof关键字</a></li>
+<li><a href="Cpp/Cpp_base/Cpp%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8.html#23-%E5%AE%9E%E5%9E%8B%E6%B5%AE%E7%82%B9%E5%9E%8B">2.3 实型（浮点型）</a></li>
+<li><a href="Cpp/Cpp_base/Cpp%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8.html#24-%E5%AD%97%E7%AC%A6%E5%9E%8B">2.4 字符型</a></li>
+<li><a href="Cpp/Cpp_base/Cpp%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8.html#25-%E8%BD%AC%E4%B9%89%E5%AD%97%E7%AC%A6">2.5 转义字符</a></li>
+<li><a href="Cpp/Cpp_base/Cpp%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8.html#26-%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%9E%8B">2.6 字符串型</a></li>
+<li><a href="Cpp/Cpp_base/Cpp%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8.html#27-%E5%B8%83%E5%B0%94%E7%B1%BB%E5%9E%8B-bool">2.7 布尔类型 bool</a></li>
+<li><a href="Cpp/Cpp_base/Cpp%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8.html#28-%E6%95%B0%E6%8D%AE%E7%9A%84%E8%BE%93%E5%85%A5">2.8 数据的输入</a></li>
+</ul>
+</li>
+<li><a href="Cpp/Cpp_base/Cpp%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8.html#3-%E8%BF%90%E7%AE%97%E7%AC%A6">3 运算符</a>
+<ul>
+<li><a href="Cpp/Cpp_base/Cpp%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8.html#31-%E7%AE%97%E6%9C%AF%E8%BF%90%E7%AE%97%E7%AC%A6">3.1 算术运算符</a></li>
+<li><a href="Cpp/Cpp_base/Cpp%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8.html#32-%E8%B5%8B%E5%80%BC%E8%BF%90%E7%AE%97%E7%AC%A6">3.2 赋值运算符</a></li>
+<li><a href="Cpp/Cpp_base/Cpp%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8.html#33-%E6%AF%94%E8%BE%83%E8%BF%90%E7%AE%97%E7%AC%A6">3.3 比较运算符</a></li>
+<li><a href="Cpp/Cpp_base/Cpp%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8.html#34-%E9%80%BB%E8%BE%91%E8%BF%90%E7%AE%97%E7%AC%A6">3.4 逻辑运算符</a></li>
+</ul>
+</li>
+<li><a href="Cpp/Cpp_base/Cpp%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8.html#4-%E7%A8%8B%E5%BA%8F%E6%B5%81%E7%A8%8B%E7%BB%93%E6%9E%84">4 程序流程结构</a>
+<ul>
+<li><a href="Cpp/Cpp_base/Cpp%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8.html#41-%E9%80%89%E6%8B%A9%E7%BB%93%E6%9E%84">4.1 选择结构</a>
+<ul>
+<li><a href="Cpp/Cpp_base/Cpp%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8.html#411-if%E8%AF%AD%E5%8F%A5">4.1.1 if语句</a></li>
+<li><a href="Cpp/Cpp_base/Cpp%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8.html#412-%E4%B8%89%E7%9B%AE%E8%BF%90%E7%AE%97%E7%AC%A6">4.1.2 三目运算符</a></li>
+<li><a href="Cpp/Cpp_base/Cpp%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8.html#413-switch%E8%AF%AD%E5%8F%A5">4.1.3 switch语句</a></li>
+</ul>
+</li>
+<li><a href="Cpp/Cpp_base/Cpp%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8.html#42-%E5%BE%AA%E7%8E%AF%E7%BB%93%E6%9E%84">4.2 循环结构</a>
+<ul>
+<li><a href="Cpp/Cpp_base/Cpp%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8.html#421-while%E5%BE%AA%E7%8E%AF%E8%AF%AD%E5%8F%A5">4.2.1 while循环语句</a></li>
+<li><a href="Cpp/Cpp_base/Cpp%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8.html#422-dowhile%E5%BE%AA%E7%8E%AF%E8%AF%AD%E5%8F%A5">4.2.2 do...while循环语句</a></li>
+<li><a href="Cpp/Cpp_base/Cpp%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8.html#423-for%E5%BE%AA%E7%8E%AF%E8%AF%AD%E5%8F%A5">4.2.3 for循环语句</a></li>
+<li><a href="Cpp/Cpp_base/Cpp%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8.html#424-%E5%B5%8C%E5%A5%97%E5%BE%AA%E7%8E%AF">4.2.4 嵌套循环</a></li>
+</ul>
+</li>
+<li><a href="Cpp/Cpp_base/Cpp%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8.html#43-%E8%B7%B3%E8%BD%AC%E8%AF%AD%E5%8F%A5">4.3 跳转语句</a>
+<ul>
+<li><a href="Cpp/Cpp_base/Cpp%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8.html#431-break%E8%AF%AD%E5%8F%A5">4.3.1 break语句</a></li>
+<li><a href="Cpp/Cpp_base/Cpp%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8.html#432-continue%E8%AF%AD%E5%8F%A5">4.3.2 continue语句</a></li>
+<li><a href="Cpp/Cpp_base/Cpp%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8.html#433-goto%E8%AF%AD%E5%8F%A5">4.3.3 goto语句</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="Cpp/Cpp_base/Cpp%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8.html#5-%E6%95%B0%E7%BB%84">5 数组</a>
+<ul>
+<li><a href="Cpp/Cpp_base/Cpp%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8.html#51-%E6%A6%82%E8%BF%B0">5.1 概述</a></li>
+<li><a href="Cpp/Cpp_base/Cpp%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8.html#52-%E4%B8%80%E7%BB%B4%E6%95%B0%E7%BB%84">5.2 一维数组</a>
+<ul>
+<li><a href="Cpp/Cpp_base/Cpp%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8.html#521-%E4%B8%80%E7%BB%B4%E6%95%B0%E7%BB%84%E5%AE%9A%E4%B9%89%E6%96%B9%E5%BC%8F">5.2.1 一维数组定义方式</a></li>
+<li><a href="Cpp/Cpp_base/Cpp%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8.html#522-%E4%B8%80%E7%BB%B4%E6%95%B0%E7%BB%84%E6%95%B0%E7%BB%84%E5%90%8D">5.2.2 一维数组数组名</a></li>
+<li><a href="Cpp/Cpp_base/Cpp%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8.html#523-%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F">5.2.3 冒泡排序</a></li>
+</ul>
+</li>
+<li><a href="Cpp/Cpp_base/Cpp%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8.html#53-%E4%BA%8C%E7%BB%B4%E6%95%B0%E7%BB%84">5.3 二维数组</a>
+<ul>
+<li><a href="Cpp/Cpp_base/Cpp%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8.html#531-%E4%BA%8C%E7%BB%B4%E6%95%B0%E7%BB%84%E5%AE%9A%E4%B9%89%E6%96%B9%E5%BC%8F">5.3.1 二维数组定义方式</a></li>
+<li><a href="Cpp/Cpp_base/Cpp%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8.html#532-%E4%BA%8C%E7%BB%B4%E6%95%B0%E7%BB%84%E6%95%B0%E7%BB%84%E5%90%8D">5.3.2 二维数组数组名</a></li>
+<li><a href="Cpp/Cpp_base/Cpp%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8.html#533-%E4%BA%8C%E7%BB%B4%E6%95%B0%E7%BB%84%E5%BA%94%E7%94%A8%E6%A1%88%E4%BE%8B"><strong>5.3.3 二维数组应用案例</strong></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="Cpp/Cpp_base/Cpp%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8.html#6-%E5%87%BD%E6%95%B0">6 函数</a>
+<ul>
+<li><a href="Cpp/Cpp_base/Cpp%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8.html#61-%E6%A6%82%E8%BF%B0">6.1 概述</a></li>
+<li><a href="Cpp/Cpp_base/Cpp%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8.html#62-%E5%87%BD%E6%95%B0%E7%9A%84%E5%AE%9A%E4%B9%89">6.2 函数的定义</a></li>
+<li><a href="Cpp/Cpp_base/Cpp%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8.html#63-%E5%87%BD%E6%95%B0%E7%9A%84%E8%B0%83%E7%94%A8">6.3 函数的调用</a></li>
+<li><a href="Cpp/Cpp_base/Cpp%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8.html#64-%E5%80%BC%E4%BC%A0%E9%80%92">6.4 值传递</a></li>
+<li><a href="Cpp/Cpp_base/Cpp%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8.html#65-%E5%87%BD%E6%95%B0%E7%9A%84%E5%B8%B8%E8%A7%81%E6%A0%B7%E5%BC%8F"><strong>6.5 函数的常见样式</strong></a></li>
+<li><a href="Cpp/Cpp_base/Cpp%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8.html#66-%E5%87%BD%E6%95%B0%E7%9A%84%E5%A3%B0%E6%98%8E">6.6 函数的声明</a></li>
+<li><a href="Cpp/Cpp_base/Cpp%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8.html#67-%E5%87%BD%E6%95%B0%E7%9A%84%E5%88%86%E6%96%87%E4%BB%B6%E7%BC%96%E5%86%99">6.7 函数的分文件编写</a></li>
+</ul>
+</li>
+<li><a href="Cpp/Cpp_base/Cpp%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8.html#7-%E6%8C%87%E9%92%88">7 指针</a>
+<ul>
+<li><a href="Cpp/Cpp_base/Cpp%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8.html#71-%E6%8C%87%E9%92%88%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5">7.1 指针的基本概念</a></li>
+<li><a href="Cpp/Cpp_base/Cpp%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8.html#72-%E6%8C%87%E9%92%88%E5%8F%98%E9%87%8F%E7%9A%84%E5%AE%9A%E4%B9%89%E5%92%8C%E4%BD%BF%E7%94%A8">7.2 指针变量的定义和使用</a></li>
+<li><a href="Cpp/Cpp_base/Cpp%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8.html#73-%E6%8C%87%E9%92%88%E6%89%80%E5%8D%A0%E5%86%85%E5%AD%98%E7%A9%BA%E9%97%B4">7.3 指针所占内存空间</a></li>
+<li><a href="Cpp/Cpp_base/Cpp%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8.html#74-%E7%A9%BA%E6%8C%87%E9%92%88%E5%92%8C%E9%87%8E%E6%8C%87%E9%92%88">7.4 空指针和野指针</a></li>
+<li><a href="Cpp/Cpp_base/Cpp%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8.html#75-const%E4%BF%AE%E9%A5%B0%E6%8C%87%E9%92%88">7.5 const修饰指针</a></li>
+<li><a href="Cpp/Cpp_base/Cpp%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8.html#76-%E6%8C%87%E9%92%88%E5%92%8C%E6%95%B0%E7%BB%84">7.6 指针和数组</a></li>
+<li><a href="Cpp/Cpp_base/Cpp%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8.html#77-%E6%8C%87%E9%92%88%E5%92%8C%E5%87%BD%E6%95%B0">7.7 指针和函数</a></li>
+<li><a href="Cpp/Cpp_base/Cpp%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8.html#78-%E6%8C%87%E9%92%88%E6%95%B0%E7%BB%84%E5%87%BD%E6%95%B0">7.8 指针、数组、函数</a></li>
+</ul>
+</li>
+<li><a href="Cpp/Cpp_base/Cpp%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8.html#8-%E7%BB%93%E6%9E%84%E4%BD%93">8 结构体</a>
+<ul>
+<li><a href="Cpp/Cpp_base/Cpp%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8.html#81-%E7%BB%93%E6%9E%84%E4%BD%93%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5">8.1 结构体基本概念</a></li>
+<li><a href="Cpp/Cpp_base/Cpp%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8.html#82-%E7%BB%93%E6%9E%84%E4%BD%93%E5%AE%9A%E4%B9%89%E5%92%8C%E4%BD%BF%E7%94%A8">8.2 结构体定义和使用</a></li>
+<li><a href="Cpp/Cpp_base/Cpp%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8.html#83-%E7%BB%93%E6%9E%84%E4%BD%93%E6%95%B0%E7%BB%84">8.3 结构体数组</a></li>
+<li><a href="Cpp/Cpp_base/Cpp%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8.html#84-%E7%BB%93%E6%9E%84%E4%BD%93%E6%8C%87%E9%92%88">8.4 结构体指针</a></li>
+<li><a href="Cpp/Cpp_base/Cpp%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8.html#85-%E7%BB%93%E6%9E%84%E4%BD%93%E5%B5%8C%E5%A5%97%E7%BB%93%E6%9E%84%E4%BD%93">8.5 结构体嵌套结构体</a></li>
+<li><a href="Cpp/Cpp_base/Cpp%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8.html#86-%E7%BB%93%E6%9E%84%E4%BD%93%E5%81%9A%E5%87%BD%E6%95%B0%E5%8F%82%E6%95%B0">8.6 结构体做函数参数</a></li>
+<li><a href="Cpp/Cpp_base/Cpp%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8.html#87-%E7%BB%93%E6%9E%84%E4%BD%93%E4%B8%AD-const%E4%BD%BF%E7%94%A8%E5%9C%BA%E6%99%AF">8.7 结构体中 const使用场景</a></li>
+<li><a href="Cpp/Cpp_base/Cpp%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8.html#88-%E7%BB%93%E6%9E%84%E4%BD%93%E6%A1%88%E4%BE%8B">8.8 结构体案例</a>
+<ul>
+<li><a href="Cpp/Cpp_base/Cpp%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8.html#881-%E6%A1%88%E4%BE%8B1">8.8.1 案例1</a></li>
+<li><a href="Cpp/Cpp_base/Cpp%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8.html#882-%E6%A1%88%E4%BE%8B2">8.8.2 案例2</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
 <h2 id="1-c初识"><a class="header" href="#1-c初识">1 C++初识</a></h2>
 <h3 id="11--第一个c程序"><a class="header" href="#11--第一个c程序">1.1  第一个C++程序</a></h3>
 <p>编写一个C++程序总共分为4个步骤</p>
@@ -2612,9 +2763,129 @@ int main() {
 	return 0;
 }
 </code></pre>
-<h1 id=""><a class="header" href="#"></a></h1>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="c核心编程"><a class="header" href="#c核心编程">C++核心编程</a></h1>
 <p>本阶段主要针对C++==面向对象==编程技术做详细讲解，探讨C++中的核心和精髓。</p>
+<ul>
+<li><a href="Cpp/Cpp_core/Cpp%E6%A0%B8%E5%BF%83%E7%BC%96%E7%A8%8B.html#c%E6%A0%B8%E5%BF%83%E7%BC%96%E7%A8%8B">C++核心编程</a>
+<ul>
+<li><a href="Cpp/Cpp_core/Cpp%E6%A0%B8%E5%BF%83%E7%BC%96%E7%A8%8B.html#1-%E5%86%85%E5%AD%98%E5%88%86%E5%8C%BA%E6%A8%A1%E5%9E%8B">1 内存分区模型</a>
+<ul>
+<li><a href="Cpp/Cpp_core/Cpp%E6%A0%B8%E5%BF%83%E7%BC%96%E7%A8%8B.html#11-%E7%A8%8B%E5%BA%8F%E8%BF%90%E8%A1%8C%E5%89%8D">1.1 程序运行前</a></li>
+<li><a href="Cpp/Cpp_core/Cpp%E6%A0%B8%E5%BF%83%E7%BC%96%E7%A8%8B.html#12-%E7%A8%8B%E5%BA%8F%E8%BF%90%E8%A1%8C%E5%90%8E">1.2 程序运行后</a></li>
+<li><a href="Cpp/Cpp_core/Cpp%E6%A0%B8%E5%BF%83%E7%BC%96%E7%A8%8B.html#13-new%E6%93%8D%E4%BD%9C%E7%AC%A6">1.3 new操作符</a></li>
+</ul>
+</li>
+<li><a href="Cpp/Cpp_core/Cpp%E6%A0%B8%E5%BF%83%E7%BC%96%E7%A8%8B.html#2-%E5%BC%95%E7%94%A8">2 引用</a>
+<ul>
+<li><a href="Cpp/Cpp_core/Cpp%E6%A0%B8%E5%BF%83%E7%BC%96%E7%A8%8B.html#21-%E5%BC%95%E7%94%A8%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8">2.1 引用的基本使用</a></li>
+<li><a href="Cpp/Cpp_core/Cpp%E6%A0%B8%E5%BF%83%E7%BC%96%E7%A8%8B.html#22-%E5%BC%95%E7%94%A8%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9">2.2 引用注意事项</a></li>
+<li><a href="Cpp/Cpp_core/Cpp%E6%A0%B8%E5%BF%83%E7%BC%96%E7%A8%8B.html#23-%E5%BC%95%E7%94%A8%E5%81%9A%E5%87%BD%E6%95%B0%E5%8F%82%E6%95%B0">2.3 引用做函数参数</a></li>
+<li><a href="Cpp/Cpp_core/Cpp%E6%A0%B8%E5%BF%83%E7%BC%96%E7%A8%8B.html#24-%E5%BC%95%E7%94%A8%E5%81%9A%E5%87%BD%E6%95%B0%E8%BF%94%E5%9B%9E%E5%80%BC">2.4 引用做函数返回值</a></li>
+<li><a href="Cpp/Cpp_core/Cpp%E6%A0%B8%E5%BF%83%E7%BC%96%E7%A8%8B.html#25-%E5%BC%95%E7%94%A8%E7%9A%84%E6%9C%AC%E8%B4%A8">2.5 引用的本质</a></li>
+<li><a href="Cpp/Cpp_core/Cpp%E6%A0%B8%E5%BF%83%E7%BC%96%E7%A8%8B.html#26-%E5%B8%B8%E9%87%8F%E5%BC%95%E7%94%A8">2.6 常量引用</a></li>
+</ul>
+</li>
+<li><a href="Cpp/Cpp_core/Cpp%E6%A0%B8%E5%BF%83%E7%BC%96%E7%A8%8B.html#3-%E5%87%BD%E6%95%B0%E6%8F%90%E9%AB%98">3 函数提高</a>
+<ul>
+<li><a href="Cpp/Cpp_core/Cpp%E6%A0%B8%E5%BF%83%E7%BC%96%E7%A8%8B.html#31-%E5%87%BD%E6%95%B0%E9%BB%98%E8%AE%A4%E5%8F%82%E6%95%B0">3.1 函数默认参数</a></li>
+<li><a href="Cpp/Cpp_core/Cpp%E6%A0%B8%E5%BF%83%E7%BC%96%E7%A8%8B.html#32-%E5%87%BD%E6%95%B0%E5%8D%A0%E4%BD%8D%E5%8F%82%E6%95%B0">3.2 函数占位参数</a></li>
+<li><a href="Cpp/Cpp_core/Cpp%E6%A0%B8%E5%BF%83%E7%BC%96%E7%A8%8B.html#33-%E5%87%BD%E6%95%B0%E9%87%8D%E8%BD%BD">3.3 函数重载</a>
+<ul>
+<li><a href="Cpp/Cpp_core/Cpp%E6%A0%B8%E5%BF%83%E7%BC%96%E7%A8%8B.html#331-%E5%87%BD%E6%95%B0%E9%87%8D%E8%BD%BD%E6%A6%82%E8%BF%B0">3.3.1 函数重载概述</a></li>
+<li><a href="Cpp/Cpp_core/Cpp%E6%A0%B8%E5%BF%83%E7%BC%96%E7%A8%8B.html#332-%E5%87%BD%E6%95%B0%E9%87%8D%E8%BD%BD%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9">3.3.2 函数重载注意事项</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="Cpp/Cpp_core/Cpp%E6%A0%B8%E5%BF%83%E7%BC%96%E7%A8%8B.html#4-%E7%B1%BB%E5%92%8C%E5%AF%B9%E8%B1%A1"><strong>4</strong> 类和对象</a>
+<ul>
+<li><a href="Cpp/Cpp_core/Cpp%E6%A0%B8%E5%BF%83%E7%BC%96%E7%A8%8B.html#41-%E5%B0%81%E8%A3%85">4.1 封装</a>
+<ul>
+<li><a href="Cpp/Cpp_core/Cpp%E6%A0%B8%E5%BF%83%E7%BC%96%E7%A8%8B.html#411--%E5%B0%81%E8%A3%85%E7%9A%84%E6%84%8F%E4%B9%89">4.1.1  封装的意义</a></li>
+<li><a href="Cpp/Cpp_core/Cpp%E6%A0%B8%E5%BF%83%E7%BC%96%E7%A8%8B.html#412-struct%E5%92%8Cclass%E5%8C%BA%E5%88%AB">4.1.2 struct和class区别</a></li>
+<li><a href="Cpp/Cpp_core/Cpp%E6%A0%B8%E5%BF%83%E7%BC%96%E7%A8%8B.html#413-%E6%88%90%E5%91%98%E5%B1%9E%E6%80%A7%E8%AE%BE%E7%BD%AE%E4%B8%BA%E7%A7%81%E6%9C%89">4.1.3 成员属性设置为私有</a></li>
+</ul>
+</li>
+<li><a href="Cpp/Cpp_core/Cpp%E6%A0%B8%E5%BF%83%E7%BC%96%E7%A8%8B.html#42-%E5%AF%B9%E8%B1%A1%E7%9A%84%E5%88%9D%E5%A7%8B%E5%8C%96%E5%92%8C%E6%B8%85%E7%90%86">4.2 对象的初始化和清理</a>
+<ul>
+<li><a href="Cpp/Cpp_core/Cpp%E6%A0%B8%E5%BF%83%E7%BC%96%E7%A8%8B.html#421-%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0%E5%92%8C%E6%9E%90%E6%9E%84%E5%87%BD%E6%95%B0">4.2.1 构造函数和析构函数</a></li>
+<li><a href="Cpp/Cpp_core/Cpp%E6%A0%B8%E5%BF%83%E7%BC%96%E7%A8%8B.html#422-%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0%E7%9A%84%E5%88%86%E7%B1%BB%E5%8F%8A%E8%B0%83%E7%94%A8">4.2.2 构造函数的分类及调用</a></li>
+<li><a href="Cpp/Cpp_core/Cpp%E6%A0%B8%E5%BF%83%E7%BC%96%E7%A8%8B.html#423-%E6%8B%B7%E8%B4%9D%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0%E8%B0%83%E7%94%A8%E6%97%B6%E6%9C%BA">4.2.3 拷贝构造函数调用时机</a></li>
+<li><a href="Cpp/Cpp_core/Cpp%E6%A0%B8%E5%BF%83%E7%BC%96%E7%A8%8B.html#424-%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0%E8%B0%83%E7%94%A8%E8%A7%84%E5%88%99">4.2.4 构造函数调用规则</a></li>
+<li><a href="Cpp/Cpp_core/Cpp%E6%A0%B8%E5%BF%83%E7%BC%96%E7%A8%8B.html#425-%E6%B7%B1%E6%8B%B7%E8%B4%9D%E4%B8%8E%E6%B5%85%E6%8B%B7%E8%B4%9D">4.2.5 深拷贝与浅拷贝</a></li>
+<li><a href="Cpp/Cpp_core/Cpp%E6%A0%B8%E5%BF%83%E7%BC%96%E7%A8%8B.html#426-%E5%88%9D%E5%A7%8B%E5%8C%96%E5%88%97%E8%A1%A8">4.2.6 初始化列表</a></li>
+<li><a href="Cpp/Cpp_core/Cpp%E6%A0%B8%E5%BF%83%E7%BC%96%E7%A8%8B.html#427-%E7%B1%BB%E5%AF%B9%E8%B1%A1%E4%BD%9C%E4%B8%BA%E7%B1%BB%E6%88%90%E5%91%98">4.2.7 类对象作为类成员</a></li>
+<li><a href="Cpp/Cpp_core/Cpp%E6%A0%B8%E5%BF%83%E7%BC%96%E7%A8%8B.html#428-%E9%9D%99%E6%80%81%E6%88%90%E5%91%98">4.2.8 静态成员</a></li>
+</ul>
+</li>
+<li><a href="Cpp/Cpp_core/Cpp%E6%A0%B8%E5%BF%83%E7%BC%96%E7%A8%8B.html#43-c%E5%AF%B9%E8%B1%A1%E6%A8%A1%E5%9E%8B%E5%92%8Cthis%E6%8C%87%E9%92%88">4.3 C++对象模型和this指针</a>
+<ul>
+<li><a href="Cpp/Cpp_core/Cpp%E6%A0%B8%E5%BF%83%E7%BC%96%E7%A8%8B.html#431-%E6%88%90%E5%91%98%E5%8F%98%E9%87%8F%E5%92%8C%E6%88%90%E5%91%98%E5%87%BD%E6%95%B0%E5%88%86%E5%BC%80%E5%AD%98%E5%82%A8">4.3.1 成员变量和成员函数分开存储</a></li>
+<li><a href="Cpp/Cpp_core/Cpp%E6%A0%B8%E5%BF%83%E7%BC%96%E7%A8%8B.html#432-this%E6%8C%87%E9%92%88%E6%A6%82%E5%BF%B5">4.3.2 this指针概念</a></li>
+<li><a href="Cpp/Cpp_core/Cpp%E6%A0%B8%E5%BF%83%E7%BC%96%E7%A8%8B.html#433-%E7%A9%BA%E6%8C%87%E9%92%88%E8%AE%BF%E9%97%AE%E6%88%90%E5%91%98%E5%87%BD%E6%95%B0">4.3.3 空指针访问成员函数</a></li>
+<li><a href="Cpp/Cpp_core/Cpp%E6%A0%B8%E5%BF%83%E7%BC%96%E7%A8%8B.html#434-const%E4%BF%AE%E9%A5%B0%E6%88%90%E5%91%98%E5%87%BD%E6%95%B0">4.3.4 const修饰成员函数</a></li>
+</ul>
+</li>
+<li><a href="Cpp/Cpp_core/Cpp%E6%A0%B8%E5%BF%83%E7%BC%96%E7%A8%8B.html#44-%E5%8F%8B%E5%85%83">4.4 友元</a>
+<ul>
+<li><a href="Cpp/Cpp_core/Cpp%E6%A0%B8%E5%BF%83%E7%BC%96%E7%A8%8B.html#441-%E5%85%A8%E5%B1%80%E5%87%BD%E6%95%B0%E5%81%9A%E5%8F%8B%E5%85%83">4.4.1 全局函数做友元</a></li>
+<li><a href="Cpp/Cpp_core/Cpp%E6%A0%B8%E5%BF%83%E7%BC%96%E7%A8%8B.html#442-%E7%B1%BB%E5%81%9A%E5%8F%8B%E5%85%83">4.4.2 类做友元</a></li>
+<li><a href="Cpp/Cpp_core/Cpp%E6%A0%B8%E5%BF%83%E7%BC%96%E7%A8%8B.html#443-%E6%88%90%E5%91%98%E5%87%BD%E6%95%B0%E5%81%9A%E5%8F%8B%E5%85%83">4.4.3 成员函数做友元</a></li>
+</ul>
+</li>
+<li><a href="Cpp/Cpp_core/Cpp%E6%A0%B8%E5%BF%83%E7%BC%96%E7%A8%8B.html#45-%E8%BF%90%E7%AE%97%E7%AC%A6%E9%87%8D%E8%BD%BD">4.5 运算符重载</a>
+<ul>
+<li><a href="Cpp/Cpp_core/Cpp%E6%A0%B8%E5%BF%83%E7%BC%96%E7%A8%8B.html#451-%E5%8A%A0%E5%8F%B7%E8%BF%90%E7%AE%97%E7%AC%A6%E9%87%8D%E8%BD%BD">4.5.1 加号运算符重载</a></li>
+<li><a href="Cpp/Cpp_core/Cpp%E6%A0%B8%E5%BF%83%E7%BC%96%E7%A8%8B.html#452-%E5%B7%A6%E7%A7%BB%E8%BF%90%E7%AE%97%E7%AC%A6%E9%87%8D%E8%BD%BD">4.5.2 左移运算符重载</a></li>
+<li><a href="Cpp/Cpp_core/Cpp%E6%A0%B8%E5%BF%83%E7%BC%96%E7%A8%8B.html#453-%E9%80%92%E5%A2%9E%E8%BF%90%E7%AE%97%E7%AC%A6%E9%87%8D%E8%BD%BD">4.5.3 递增运算符重载</a></li>
+<li><a href="Cpp/Cpp_core/Cpp%E6%A0%B8%E5%BF%83%E7%BC%96%E7%A8%8B.html#454-%E8%B5%8B%E5%80%BC%E8%BF%90%E7%AE%97%E7%AC%A6%E9%87%8D%E8%BD%BD">4.5.4 赋值运算符重载</a></li>
+<li><a href="Cpp/Cpp_core/Cpp%E6%A0%B8%E5%BF%83%E7%BC%96%E7%A8%8B.html#455-%E5%85%B3%E7%B3%BB%E8%BF%90%E7%AE%97%E7%AC%A6%E9%87%8D%E8%BD%BD">4.5.5 关系运算符重载</a></li>
+<li><a href="Cpp/Cpp_core/Cpp%E6%A0%B8%E5%BF%83%E7%BC%96%E7%A8%8B.html#456-%E5%87%BD%E6%95%B0%E8%B0%83%E7%94%A8%E8%BF%90%E7%AE%97%E7%AC%A6%E9%87%8D%E8%BD%BD">4.5.6 函数调用运算符重载</a></li>
+</ul>
+</li>
+<li><a href="Cpp/Cpp_core/Cpp%E6%A0%B8%E5%BF%83%E7%BC%96%E7%A8%8B.html#46--%E7%BB%A7%E6%89%BF">4.6  继承</a>
+<ul>
+<li><a href="Cpp/Cpp_core/Cpp%E6%A0%B8%E5%BF%83%E7%BC%96%E7%A8%8B.html#461-%E7%BB%A7%E6%89%BF%E7%9A%84%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95">4.6.1 继承的基本语法</a></li>
+<li><a href="Cpp/Cpp_core/Cpp%E6%A0%B8%E5%BF%83%E7%BC%96%E7%A8%8B.html#462-%E7%BB%A7%E6%89%BF%E6%96%B9%E5%BC%8F">4.6.2 继承方式</a></li>
+<li><a href="Cpp/Cpp_core/Cpp%E6%A0%B8%E5%BF%83%E7%BC%96%E7%A8%8B.html#463-%E7%BB%A7%E6%89%BF%E4%B8%AD%E7%9A%84%E5%AF%B9%E8%B1%A1%E6%A8%A1%E5%9E%8B">4.6.3 继承中的对象模型</a></li>
+<li><a href="Cpp/Cpp_core/Cpp%E6%A0%B8%E5%BF%83%E7%BC%96%E7%A8%8B.html#464-%E7%BB%A7%E6%89%BF%E4%B8%AD%E6%9E%84%E9%80%A0%E5%92%8C%E6%9E%90%E6%9E%84%E9%A1%BA%E5%BA%8F">4.6.4 继承中构造和析构顺序</a></li>
+<li><a href="Cpp/Cpp_core/Cpp%E6%A0%B8%E5%BF%83%E7%BC%96%E7%A8%8B.html#465-%E7%BB%A7%E6%89%BF%E5%90%8C%E5%90%8D%E6%88%90%E5%91%98%E5%A4%84%E7%90%86%E6%96%B9%E5%BC%8F">4.6.5 继承同名成员处理方式</a></li>
+<li><a href="Cpp/Cpp_core/Cpp%E6%A0%B8%E5%BF%83%E7%BC%96%E7%A8%8B.html#466-%E7%BB%A7%E6%89%BF%E5%90%8C%E5%90%8D%E9%9D%99%E6%80%81%E6%88%90%E5%91%98%E5%A4%84%E7%90%86%E6%96%B9%E5%BC%8F">4.6.6 继承同名静态成员处理方式</a></li>
+<li><a href="Cpp/Cpp_core/Cpp%E6%A0%B8%E5%BF%83%E7%BC%96%E7%A8%8B.html#467-%E5%A4%9A%E7%BB%A7%E6%89%BF%E8%AF%AD%E6%B3%95">4.6.7 多继承语法</a></li>
+<li><a href="Cpp/Cpp_core/Cpp%E6%A0%B8%E5%BF%83%E7%BC%96%E7%A8%8B.html#468-%E8%8F%B1%E5%BD%A2%E7%BB%A7%E6%89%BF">4.6.8 菱形继承</a></li>
+</ul>
+</li>
+<li><a href="Cpp/Cpp_core/Cpp%E6%A0%B8%E5%BF%83%E7%BC%96%E7%A8%8B.html#47--%E5%A4%9A%E6%80%81">4.7  多态</a>
+<ul>
+<li><a href="Cpp/Cpp_core/Cpp%E6%A0%B8%E5%BF%83%E7%BC%96%E7%A8%8B.html#471-%E5%A4%9A%E6%80%81%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5">4.7.1 多态的基本概念</a></li>
+<li><a href="Cpp/Cpp_core/Cpp%E6%A0%B8%E5%BF%83%E7%BC%96%E7%A8%8B.html#472-%E5%A4%9A%E6%80%81%E6%A1%88%E4%BE%8B%E4%B8%80-%E8%AE%A1%E7%AE%97%E5%99%A8%E7%B1%BB">4.7.2 多态案例一-计算器类</a></li>
+<li><a href="Cpp/Cpp_core/Cpp%E6%A0%B8%E5%BF%83%E7%BC%96%E7%A8%8B.html#473-%E7%BA%AF%E8%99%9A%E5%87%BD%E6%95%B0%E5%92%8C%E6%8A%BD%E8%B1%A1%E7%B1%BB">4.7.3 纯虚函数和抽象类</a></li>
+<li><a href="Cpp/Cpp_core/Cpp%E6%A0%B8%E5%BF%83%E7%BC%96%E7%A8%8B.html#474-%E5%A4%9A%E6%80%81%E6%A1%88%E4%BE%8B%E4%BA%8C-%E5%88%B6%E4%BD%9C%E9%A5%AE%E5%93%81">4.7.4 多态案例二-制作饮品</a></li>
+<li><a href="Cpp/Cpp_core/Cpp%E6%A0%B8%E5%BF%83%E7%BC%96%E7%A8%8B.html#475-%E8%99%9A%E6%9E%90%E6%9E%84%E5%92%8C%E7%BA%AF%E8%99%9A%E6%9E%90%E6%9E%84">4.7.5 虚析构和纯虚析构</a></li>
+<li><a href="Cpp/Cpp_core/Cpp%E6%A0%B8%E5%BF%83%E7%BC%96%E7%A8%8B.html#476-%E5%A4%9A%E6%80%81%E6%A1%88%E4%BE%8B%E4%B8%89-%E7%94%B5%E8%84%91%E7%BB%84%E8%A3%85">4.7.6 多态案例三-电脑组装</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="Cpp/Cpp_core/Cpp%E6%A0%B8%E5%BF%83%E7%BC%96%E7%A8%8B.html#5-%E6%96%87%E4%BB%B6%E6%93%8D%E4%BD%9C">5 文件操作</a>
+<ul>
+<li><a href="Cpp/Cpp_core/Cpp%E6%A0%B8%E5%BF%83%E7%BC%96%E7%A8%8B.html#51%E6%96%87%E6%9C%AC%E6%96%87%E4%BB%B6">5.1文本文件</a>
+<ul>
+<li><a href="Cpp/Cpp_core/Cpp%E6%A0%B8%E5%BF%83%E7%BC%96%E7%A8%8B.html#511%E5%86%99%E6%96%87%E4%BB%B6">5.1.1写文件</a></li>
+<li><a href="Cpp/Cpp_core/Cpp%E6%A0%B8%E5%BF%83%E7%BC%96%E7%A8%8B.html#512%E8%AF%BB%E6%96%87%E4%BB%B6">5.1.2读文件</a></li>
+</ul>
+</li>
+<li><a href="Cpp/Cpp_core/Cpp%E6%A0%B8%E5%BF%83%E7%BC%96%E7%A8%8B.html#52-%E4%BA%8C%E8%BF%9B%E5%88%B6%E6%96%87%E4%BB%B6">5.2 二进制文件</a>
+<ul>
+<li><a href="Cpp/Cpp_core/Cpp%E6%A0%B8%E5%BF%83%E7%BC%96%E7%A8%8B.html#521-%E5%86%99%E6%96%87%E4%BB%B6">5.2.1 写文件</a></li>
+<li><a href="Cpp/Cpp_core/Cpp%E6%A0%B8%E5%BF%83%E7%BC%96%E7%A8%8B.html#522-%E8%AF%BB%E6%96%87%E4%BB%B6">5.2.2 读文件</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
 <h2 id="1-内存分区模型"><a class="header" href="#1-内存分区模型">1 内存分区模型</a></h2>
 <p>C++程序在执行时，将内存大方向划分为<strong>4个区域</strong></p>
 <ul>
@@ -6274,6 +6545,227 @@ int main() {
 <div style="break-before: page; page-break-before: always;"></div><h1 id="c提高编程"><a class="header" href="#c提高编程">C++提高编程</a></h1>
 <ul>
 <li>本阶段主要针对C++==泛型编程==和==STL==技术做详细讲解，探讨C++更深层的使用</li>
+</ul>
+<ul>
+<li><a href="Cpp/Cpp_more/Cpp%E6%8F%90%E9%AB%98%E7%BC%96%E7%A8%8B.html#c%E6%8F%90%E9%AB%98%E7%BC%96%E7%A8%8B">C++提高编程</a>
+<ul>
+<li><a href="Cpp/Cpp_more/Cpp%E6%8F%90%E9%AB%98%E7%BC%96%E7%A8%8B.html#1-%E6%A8%A1%E6%9D%BF">1 模板</a>
+<ul>
+<li><a href="Cpp/Cpp_more/Cpp%E6%8F%90%E9%AB%98%E7%BC%96%E7%A8%8B.html#11-%E6%A8%A1%E6%9D%BF%E7%9A%84%E6%A6%82%E5%BF%B5">1.1 模板的概念</a></li>
+<li><a href="Cpp/Cpp_more/Cpp%E6%8F%90%E9%AB%98%E7%BC%96%E7%A8%8B.html#12-%E5%87%BD%E6%95%B0%E6%A8%A1%E6%9D%BF">1.2 函数模板</a>
+<ul>
+<li><a href="Cpp/Cpp_more/Cpp%E6%8F%90%E9%AB%98%E7%BC%96%E7%A8%8B.html#121-%E5%87%BD%E6%95%B0%E6%A8%A1%E6%9D%BF%E8%AF%AD%E6%B3%95">1.2.1 函数模板语法</a></li>
+<li><a href="Cpp/Cpp_more/Cpp%E6%8F%90%E9%AB%98%E7%BC%96%E7%A8%8B.html#122-%E5%87%BD%E6%95%B0%E6%A8%A1%E6%9D%BF%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9">1.2.2 函数模板注意事项</a></li>
+<li><a href="Cpp/Cpp_more/Cpp%E6%8F%90%E9%AB%98%E7%BC%96%E7%A8%8B.html#123-%E5%87%BD%E6%95%B0%E6%A8%A1%E6%9D%BF%E6%A1%88%E4%BE%8B">1.2.3 函数模板案例</a></li>
+<li><a href="Cpp/Cpp_more/Cpp%E6%8F%90%E9%AB%98%E7%BC%96%E7%A8%8B.html#124-%E6%99%AE%E9%80%9A%E5%87%BD%E6%95%B0%E4%B8%8E%E5%87%BD%E6%95%B0%E6%A8%A1%E6%9D%BF%E7%9A%84%E5%8C%BA%E5%88%AB">1.2.4 普通函数与函数模板的区别</a></li>
+<li><a href="Cpp/Cpp_more/Cpp%E6%8F%90%E9%AB%98%E7%BC%96%E7%A8%8B.html#125-%E6%99%AE%E9%80%9A%E5%87%BD%E6%95%B0%E4%B8%8E%E5%87%BD%E6%95%B0%E6%A8%A1%E6%9D%BF%E7%9A%84%E8%B0%83%E7%94%A8%E8%A7%84%E5%88%99">1.2.5 普通函数与函数模板的调用规则</a></li>
+<li><a href="Cpp/Cpp_more/Cpp%E6%8F%90%E9%AB%98%E7%BC%96%E7%A8%8B.html#126-%E6%A8%A1%E6%9D%BF%E7%9A%84%E5%B1%80%E9%99%90%E6%80%A7">1.2.6 模板的局限性</a></li>
+</ul>
+</li>
+<li><a href="Cpp/Cpp_more/Cpp%E6%8F%90%E9%AB%98%E7%BC%96%E7%A8%8B.html#13-%E7%B1%BB%E6%A8%A1%E6%9D%BF">1.3 类模板</a>
+<ul>
+<li><a href="Cpp/Cpp_more/Cpp%E6%8F%90%E9%AB%98%E7%BC%96%E7%A8%8B.html#131-%E7%B1%BB%E6%A8%A1%E6%9D%BF%E8%AF%AD%E6%B3%95">1.3.1 类模板语法</a></li>
+<li><a href="Cpp/Cpp_more/Cpp%E6%8F%90%E9%AB%98%E7%BC%96%E7%A8%8B.html#132-%E7%B1%BB%E6%A8%A1%E6%9D%BF%E4%B8%8E%E5%87%BD%E6%95%B0%E6%A8%A1%E6%9D%BF%E5%8C%BA%E5%88%AB">1.3.2 类模板与函数模板区别</a></li>
+<li><a href="Cpp/Cpp_more/Cpp%E6%8F%90%E9%AB%98%E7%BC%96%E7%A8%8B.html#133-%E7%B1%BB%E6%A8%A1%E6%9D%BF%E4%B8%AD%E6%88%90%E5%91%98%E5%87%BD%E6%95%B0%E5%88%9B%E5%BB%BA%E6%97%B6%E6%9C%BA">1.3.3 类模板中成员函数创建时机</a></li>
+<li><a href="Cpp/Cpp_more/Cpp%E6%8F%90%E9%AB%98%E7%BC%96%E7%A8%8B.html#134-%E7%B1%BB%E6%A8%A1%E6%9D%BF%E5%AF%B9%E8%B1%A1%E5%81%9A%E5%87%BD%E6%95%B0%E5%8F%82%E6%95%B0">1.3.4 类模板对象做函数参数</a></li>
+<li><a href="Cpp/Cpp_more/Cpp%E6%8F%90%E9%AB%98%E7%BC%96%E7%A8%8B.html#135-%E7%B1%BB%E6%A8%A1%E6%9D%BF%E4%B8%8E%E7%BB%A7%E6%89%BF">1.3.5 类模板与继承</a></li>
+<li><a href="Cpp/Cpp_more/Cpp%E6%8F%90%E9%AB%98%E7%BC%96%E7%A8%8B.html#136-%E7%B1%BB%E6%A8%A1%E6%9D%BF%E6%88%90%E5%91%98%E5%87%BD%E6%95%B0%E7%B1%BB%E5%A4%96%E5%AE%9E%E7%8E%B0">1.3.6 类模板成员函数类外实现</a></li>
+<li><a href="Cpp/Cpp_more/Cpp%E6%8F%90%E9%AB%98%E7%BC%96%E7%A8%8B.html#137-%E7%B1%BB%E6%A8%A1%E6%9D%BF%E5%88%86%E6%96%87%E4%BB%B6%E7%BC%96%E5%86%99">1.3.7 类模板分文件编写</a></li>
+<li><a href="Cpp/Cpp_more/Cpp%E6%8F%90%E9%AB%98%E7%BC%96%E7%A8%8B.html#138-%E7%B1%BB%E6%A8%A1%E6%9D%BF%E4%B8%8E%E5%8F%8B%E5%85%83">1.3.8 类模板与友元</a></li>
+<li><a href="Cpp/Cpp_more/Cpp%E6%8F%90%E9%AB%98%E7%BC%96%E7%A8%8B.html#139-%E7%B1%BB%E6%A8%A1%E6%9D%BF%E6%A1%88%E4%BE%8B">1.3.9 类模板案例</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="Cpp/Cpp_more/Cpp%E6%8F%90%E9%AB%98%E7%BC%96%E7%A8%8B.html#2-stl%E5%88%9D%E8%AF%86">2 STL初识</a>
+<ul>
+<li><a href="Cpp/Cpp_more/Cpp%E6%8F%90%E9%AB%98%E7%BC%96%E7%A8%8B.html#21-stl%E7%9A%84%E8%AF%9E%E7%94%9F">2.1 STL的诞生</a></li>
+<li><a href="Cpp/Cpp_more/Cpp%E6%8F%90%E9%AB%98%E7%BC%96%E7%A8%8B.html#22-stl%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5">2.2 STL基本概念</a></li>
+<li><a href="Cpp/Cpp_more/Cpp%E6%8F%90%E9%AB%98%E7%BC%96%E7%A8%8B.html#23-stl%E5%85%AD%E5%A4%A7%E7%BB%84%E4%BB%B6">2.3 STL六大组件</a></li>
+<li><a href="Cpp/Cpp_more/Cpp%E6%8F%90%E9%AB%98%E7%BC%96%E7%A8%8B.html#24--stl%E4%B8%AD%E5%AE%B9%E5%99%A8%E7%AE%97%E6%B3%95%E8%BF%AD%E4%BB%A3%E5%99%A8">2.4  STL中容器、算法、迭代器</a></li>
+<li><a href="Cpp/Cpp_more/Cpp%E6%8F%90%E9%AB%98%E7%BC%96%E7%A8%8B.html#25-%E5%AE%B9%E5%99%A8%E7%AE%97%E6%B3%95%E8%BF%AD%E4%BB%A3%E5%99%A8%E5%88%9D%E8%AF%86">2.5 容器算法迭代器初识</a>
+<ul>
+<li><a href="Cpp/Cpp_more/Cpp%E6%8F%90%E9%AB%98%E7%BC%96%E7%A8%8B.html#251-vector%E5%AD%98%E6%94%BE%E5%86%85%E7%BD%AE%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B">2.5.1 vector存放内置数据类型</a></li>
+<li><a href="Cpp/Cpp_more/Cpp%E6%8F%90%E9%AB%98%E7%BC%96%E7%A8%8B.html#252-vector%E5%AD%98%E6%94%BE%E8%87%AA%E5%AE%9A%E4%B9%89%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B">2.5.2 Vector存放自定义数据类型</a></li>
+<li><a href="Cpp/Cpp_more/Cpp%E6%8F%90%E9%AB%98%E7%BC%96%E7%A8%8B.html#253-vector%E5%AE%B9%E5%99%A8%E5%B5%8C%E5%A5%97%E5%AE%B9%E5%99%A8">2.5.3 Vector容器嵌套容器</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="Cpp/Cpp_more/Cpp%E6%8F%90%E9%AB%98%E7%BC%96%E7%A8%8B.html#3-stl--%E5%B8%B8%E7%94%A8%E5%AE%B9%E5%99%A8">3 STL- 常用容器</a>
+<ul>
+<li><a href="Cpp/Cpp_more/Cpp%E6%8F%90%E9%AB%98%E7%BC%96%E7%A8%8B.html#31-string%E5%AE%B9%E5%99%A8">3.1 string容器</a>
+<ul>
+<li><a href="Cpp/Cpp_more/Cpp%E6%8F%90%E9%AB%98%E7%BC%96%E7%A8%8B.html#311-string%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5">3.1.1 string基本概念</a></li>
+<li><a href="Cpp/Cpp_more/Cpp%E6%8F%90%E9%AB%98%E7%BC%96%E7%A8%8B.html#312-string%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0">3.1.2 string构造函数</a></li>
+<li><a href="Cpp/Cpp_more/Cpp%E6%8F%90%E9%AB%98%E7%BC%96%E7%A8%8B.html#313-string%E8%B5%8B%E5%80%BC%E6%93%8D%E4%BD%9C">3.1.3 string赋值操作</a></li>
+<li><a href="Cpp/Cpp_more/Cpp%E6%8F%90%E9%AB%98%E7%BC%96%E7%A8%8B.html#314-string%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%8B%BC%E6%8E%A5">3.1.4 string字符串拼接</a></li>
+<li><a href="Cpp/Cpp_more/Cpp%E6%8F%90%E9%AB%98%E7%BC%96%E7%A8%8B.html#315-string%E6%9F%A5%E6%89%BE%E5%92%8C%E6%9B%BF%E6%8D%A2">3.1.5 string查找和替换</a></li>
+<li><a href="Cpp/Cpp_more/Cpp%E6%8F%90%E9%AB%98%E7%BC%96%E7%A8%8B.html#316-string%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%AF%94%E8%BE%83">3.1.6 string字符串比较</a></li>
+<li><a href="Cpp/Cpp_more/Cpp%E6%8F%90%E9%AB%98%E7%BC%96%E7%A8%8B.html#317-string%E5%AD%97%E7%AC%A6%E5%AD%98%E5%8F%96">3.1.7 string字符存取</a></li>
+<li><a href="Cpp/Cpp_more/Cpp%E6%8F%90%E9%AB%98%E7%BC%96%E7%A8%8B.html#318-string%E6%8F%92%E5%85%A5%E5%92%8C%E5%88%A0%E9%99%A4">3.1.8 string插入和删除</a></li>
+<li><a href="Cpp/Cpp_more/Cpp%E6%8F%90%E9%AB%98%E7%BC%96%E7%A8%8B.html#319-string%E5%AD%90%E4%B8%B2">3.1.9 string子串</a></li>
+</ul>
+</li>
+<li><a href="Cpp/Cpp_more/Cpp%E6%8F%90%E9%AB%98%E7%BC%96%E7%A8%8B.html#32-vector%E5%AE%B9%E5%99%A8">3.2 vector容器</a>
+<ul>
+<li><a href="Cpp/Cpp_more/Cpp%E6%8F%90%E9%AB%98%E7%BC%96%E7%A8%8B.html#321-vector%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5">3.2.1 vector基本概念</a></li>
+<li><a href="Cpp/Cpp_more/Cpp%E6%8F%90%E9%AB%98%E7%BC%96%E7%A8%8B.html#322-vector%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0">3.2.2 vector构造函数</a></li>
+<li><a href="Cpp/Cpp_more/Cpp%E6%8F%90%E9%AB%98%E7%BC%96%E7%A8%8B.html#323-vector%E8%B5%8B%E5%80%BC%E6%93%8D%E4%BD%9C">3.2.3 vector赋值操作</a></li>
+<li><a href="Cpp/Cpp_more/Cpp%E6%8F%90%E9%AB%98%E7%BC%96%E7%A8%8B.html#324--vector%E5%AE%B9%E9%87%8F%E5%92%8C%E5%A4%A7%E5%B0%8F">3.2.4  vector容量和大小</a></li>
+<li><a href="Cpp/Cpp_more/Cpp%E6%8F%90%E9%AB%98%E7%BC%96%E7%A8%8B.html#325-vector%E6%8F%92%E5%85%A5%E5%92%8C%E5%88%A0%E9%99%A4">3.2.5 vector插入和删除</a></li>
+<li><a href="Cpp/Cpp_more/Cpp%E6%8F%90%E9%AB%98%E7%BC%96%E7%A8%8B.html#326-vector%E6%95%B0%E6%8D%AE%E5%AD%98%E5%8F%96">3.2.6 vector数据存取</a></li>
+<li><a href="Cpp/Cpp_more/Cpp%E6%8F%90%E9%AB%98%E7%BC%96%E7%A8%8B.html#327-vector%E4%BA%92%E6%8D%A2%E5%AE%B9%E5%99%A8">3.2.7 vector互换容器</a></li>
+<li><a href="Cpp/Cpp_more/Cpp%E6%8F%90%E9%AB%98%E7%BC%96%E7%A8%8B.html#328-vector%E9%A2%84%E7%95%99%E7%A9%BA%E9%97%B4">3.2.8 vector预留空间</a></li>
+</ul>
+</li>
+<li><a href="Cpp/Cpp_more/Cpp%E6%8F%90%E9%AB%98%E7%BC%96%E7%A8%8B.html#33-deque%E5%AE%B9%E5%99%A8">3.3 deque容器</a>
+<ul>
+<li><a href="Cpp/Cpp_more/Cpp%E6%8F%90%E9%AB%98%E7%BC%96%E7%A8%8B.html#331-deque%E5%AE%B9%E5%99%A8%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5">3.3.1 deque容器基本概念</a></li>
+<li><a href="Cpp/Cpp_more/Cpp%E6%8F%90%E9%AB%98%E7%BC%96%E7%A8%8B.html#332-deque%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0">3.3.2 deque构造函数</a></li>
+<li><a href="Cpp/Cpp_more/Cpp%E6%8F%90%E9%AB%98%E7%BC%96%E7%A8%8B.html#333-deque%E8%B5%8B%E5%80%BC%E6%93%8D%E4%BD%9C">3.3.3 deque赋值操作</a></li>
+<li><a href="Cpp/Cpp_more/Cpp%E6%8F%90%E9%AB%98%E7%BC%96%E7%A8%8B.html#334-deque%E5%A4%A7%E5%B0%8F%E6%93%8D%E4%BD%9C">3.3.4 deque大小操作</a></li>
+<li><a href="Cpp/Cpp_more/Cpp%E6%8F%90%E9%AB%98%E7%BC%96%E7%A8%8B.html#335-deque-%E6%8F%92%E5%85%A5%E5%92%8C%E5%88%A0%E9%99%A4">3.3.5 deque 插入和删除</a></li>
+<li><a href="Cpp/Cpp_more/Cpp%E6%8F%90%E9%AB%98%E7%BC%96%E7%A8%8B.html#336-deque-%E6%95%B0%E6%8D%AE%E5%AD%98%E5%8F%96">3.3.6 deque 数据存取</a></li>
+<li><a href="Cpp/Cpp_more/Cpp%E6%8F%90%E9%AB%98%E7%BC%96%E7%A8%8B.html#337--deque-%E6%8E%92%E5%BA%8F">3.3.7  deque 排序</a></li>
+</ul>
+</li>
+<li><a href="Cpp/Cpp_more/Cpp%E6%8F%90%E9%AB%98%E7%BC%96%E7%A8%8B.html#34-%E6%A1%88%E4%BE%8B-%E8%AF%84%E5%A7%94%E6%89%93%E5%88%86">3.4 案例-评委打分</a>
+<ul>
+<li><a href="Cpp/Cpp_more/Cpp%E6%8F%90%E9%AB%98%E7%BC%96%E7%A8%8B.html#341-%E6%A1%88%E4%BE%8B%E6%8F%8F%E8%BF%B0">3.4.1 案例描述</a></li>
+<li><a href="Cpp/Cpp_more/Cpp%E6%8F%90%E9%AB%98%E7%BC%96%E7%A8%8B.html#342-%E5%AE%9E%E7%8E%B0%E6%AD%A5%E9%AA%A4">3.4.2 实现步骤</a></li>
+</ul>
+</li>
+<li><a href="Cpp/Cpp_more/Cpp%E6%8F%90%E9%AB%98%E7%BC%96%E7%A8%8B.html#35-stack%E5%AE%B9%E5%99%A8">3.5 stack容器</a>
+<ul>
+<li><a href="Cpp/Cpp_more/Cpp%E6%8F%90%E9%AB%98%E7%BC%96%E7%A8%8B.html#351-stack-%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5">3.5.1 stack 基本概念</a></li>
+<li><a href="Cpp/Cpp_more/Cpp%E6%8F%90%E9%AB%98%E7%BC%96%E7%A8%8B.html#352-stack-%E5%B8%B8%E7%94%A8%E6%8E%A5%E5%8F%A3">3.5.2 stack 常用接口</a></li>
+</ul>
+</li>
+<li><a href="Cpp/Cpp_more/Cpp%E6%8F%90%E9%AB%98%E7%BC%96%E7%A8%8B.html#36-queue-%E5%AE%B9%E5%99%A8">3.6 queue 容器</a>
+<ul>
+<li><a href="Cpp/Cpp_more/Cpp%E6%8F%90%E9%AB%98%E7%BC%96%E7%A8%8B.html#361-queue-%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5">3.6.1 queue 基本概念</a></li>
+<li><a href="Cpp/Cpp_more/Cpp%E6%8F%90%E9%AB%98%E7%BC%96%E7%A8%8B.html#362-queue-%E5%B8%B8%E7%94%A8%E6%8E%A5%E5%8F%A3">3.6.2 queue 常用接口</a></li>
+</ul>
+</li>
+<li><a href="Cpp/Cpp_more/Cpp%E6%8F%90%E9%AB%98%E7%BC%96%E7%A8%8B.html#37-list%E5%AE%B9%E5%99%A8">3.7 list容器</a>
+<ul>
+<li><a href="Cpp/Cpp_more/Cpp%E6%8F%90%E9%AB%98%E7%BC%96%E7%A8%8B.html#371-list%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5">3.7.1 list基本概念</a></li>
+<li><a href="Cpp/Cpp_more/Cpp%E6%8F%90%E9%AB%98%E7%BC%96%E7%A8%8B.html#372--list%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0">3.7.2  list构造函数</a></li>
+<li><a href="Cpp/Cpp_more/Cpp%E6%8F%90%E9%AB%98%E7%BC%96%E7%A8%8B.html#373-list-%E8%B5%8B%E5%80%BC%E5%92%8C%E4%BA%A4%E6%8D%A2">3.7.3 list 赋值和交换</a></li>
+<li><a href="Cpp/Cpp_more/Cpp%E6%8F%90%E9%AB%98%E7%BC%96%E7%A8%8B.html#374-list-%E5%A4%A7%E5%B0%8F%E6%93%8D%E4%BD%9C">3.7.4 list 大小操作</a></li>
+<li><a href="Cpp/Cpp_more/Cpp%E6%8F%90%E9%AB%98%E7%BC%96%E7%A8%8B.html#375-list-%E6%8F%92%E5%85%A5%E5%92%8C%E5%88%A0%E9%99%A4">3.7.5 list 插入和删除</a></li>
+<li><a href="Cpp/Cpp_more/Cpp%E6%8F%90%E9%AB%98%E7%BC%96%E7%A8%8B.html#376-list-%E6%95%B0%E6%8D%AE%E5%AD%98%E5%8F%96">3.7.6 list 数据存取</a></li>
+<li><a href="Cpp/Cpp_more/Cpp%E6%8F%90%E9%AB%98%E7%BC%96%E7%A8%8B.html#377-list-%E5%8F%8D%E8%BD%AC%E5%92%8C%E6%8E%92%E5%BA%8F">3.7.7 list 反转和排序</a></li>
+<li><a href="Cpp/Cpp_more/Cpp%E6%8F%90%E9%AB%98%E7%BC%96%E7%A8%8B.html#378-%E6%8E%92%E5%BA%8F%E6%A1%88%E4%BE%8B">3.7.8 排序案例</a></li>
+</ul>
+</li>
+<li><a href="Cpp/Cpp_more/Cpp%E6%8F%90%E9%AB%98%E7%BC%96%E7%A8%8B.html#38-set-multiset-%E5%AE%B9%E5%99%A8">3.8 set/ multiset 容器</a>
+<ul>
+<li><a href="Cpp/Cpp_more/Cpp%E6%8F%90%E9%AB%98%E7%BC%96%E7%A8%8B.html#381-set%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5">3.8.1 set基本概念</a></li>
+<li><a href="Cpp/Cpp_more/Cpp%E6%8F%90%E9%AB%98%E7%BC%96%E7%A8%8B.html#382-set%E6%9E%84%E9%80%A0%E5%92%8C%E8%B5%8B%E5%80%BC">3.8.2 set构造和赋值</a></li>
+<li><a href="Cpp/Cpp_more/Cpp%E6%8F%90%E9%AB%98%E7%BC%96%E7%A8%8B.html#383-set%E5%A4%A7%E5%B0%8F%E5%92%8C%E4%BA%A4%E6%8D%A2">3.8.3 set大小和交换</a></li>
+<li><a href="Cpp/Cpp_more/Cpp%E6%8F%90%E9%AB%98%E7%BC%96%E7%A8%8B.html#384-set%E6%8F%92%E5%85%A5%E5%92%8C%E5%88%A0%E9%99%A4">3.8.4 set插入和删除</a></li>
+<li><a href="Cpp/Cpp_more/Cpp%E6%8F%90%E9%AB%98%E7%BC%96%E7%A8%8B.html#385-set%E6%9F%A5%E6%89%BE%E5%92%8C%E7%BB%9F%E8%AE%A1">3.8.5 set查找和统计</a></li>
+<li><a href="Cpp/Cpp_more/Cpp%E6%8F%90%E9%AB%98%E7%BC%96%E7%A8%8B.html#386-set%E5%92%8Cmultiset%E5%8C%BA%E5%88%AB">3.8.6 set和multiset区别</a></li>
+<li><a href="Cpp/Cpp_more/Cpp%E6%8F%90%E9%AB%98%E7%BC%96%E7%A8%8B.html#387-pair%E5%AF%B9%E7%BB%84%E5%88%9B%E5%BB%BA">3.8.7 pair对组创建</a></li>
+<li><a href="Cpp/Cpp_more/Cpp%E6%8F%90%E9%AB%98%E7%BC%96%E7%A8%8B.html#388-set%E5%AE%B9%E5%99%A8%E6%8E%92%E5%BA%8F">3.8.8 set容器排序</a></li>
+</ul>
+</li>
+<li><a href="Cpp/Cpp_more/Cpp%E6%8F%90%E9%AB%98%E7%BC%96%E7%A8%8B.html#39-map-multimap%E5%AE%B9%E5%99%A8">3.9 map/ multimap容器</a>
+<ul>
+<li><a href="Cpp/Cpp_more/Cpp%E6%8F%90%E9%AB%98%E7%BC%96%E7%A8%8B.html#391-map%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5">3.9.1 map基本概念</a></li>
+<li><a href="Cpp/Cpp_more/Cpp%E6%8F%90%E9%AB%98%E7%BC%96%E7%A8%8B.html#392--map%E6%9E%84%E9%80%A0%E5%92%8C%E8%B5%8B%E5%80%BC">3.9.2  map构造和赋值</a></li>
+<li><a href="Cpp/Cpp_more/Cpp%E6%8F%90%E9%AB%98%E7%BC%96%E7%A8%8B.html#393-map%E5%A4%A7%E5%B0%8F%E5%92%8C%E4%BA%A4%E6%8D%A2">3.9.3 map大小和交换</a></li>
+<li><a href="Cpp/Cpp_more/Cpp%E6%8F%90%E9%AB%98%E7%BC%96%E7%A8%8B.html#394-map%E6%8F%92%E5%85%A5%E5%92%8C%E5%88%A0%E9%99%A4">3.9.4 map插入和删除</a></li>
+<li><a href="Cpp/Cpp_more/Cpp%E6%8F%90%E9%AB%98%E7%BC%96%E7%A8%8B.html#395-map%E6%9F%A5%E6%89%BE%E5%92%8C%E7%BB%9F%E8%AE%A1">3.9.5 map查找和统计</a></li>
+<li><a href="Cpp/Cpp_more/Cpp%E6%8F%90%E9%AB%98%E7%BC%96%E7%A8%8B.html#396-map%E5%AE%B9%E5%99%A8%E6%8E%92%E5%BA%8F">3.9.6 map容器排序</a></li>
+</ul>
+</li>
+<li><a href="Cpp/Cpp_more/Cpp%E6%8F%90%E9%AB%98%E7%BC%96%E7%A8%8B.html#310-%E6%A1%88%E4%BE%8B-%E5%91%98%E5%B7%A5%E5%88%86%E7%BB%84">3.10 案例-员工分组</a>
+<ul>
+<li><a href="Cpp/Cpp_more/Cpp%E6%8F%90%E9%AB%98%E7%BC%96%E7%A8%8B.html#3101-%E6%A1%88%E4%BE%8B%E6%8F%8F%E8%BF%B0">3.10.1 案例描述</a></li>
+<li><a href="Cpp/Cpp_more/Cpp%E6%8F%90%E9%AB%98%E7%BC%96%E7%A8%8B.html#3102-%E5%AE%9E%E7%8E%B0%E6%AD%A5%E9%AA%A4">3.10.2 实现步骤</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="Cpp/Cpp_more/Cpp%E6%8F%90%E9%AB%98%E7%BC%96%E7%A8%8B.html#4-stl--%E5%87%BD%E6%95%B0%E5%AF%B9%E8%B1%A1">4 STL- 函数对象</a>
+<ul>
+<li><a href="Cpp/Cpp_more/Cpp%E6%8F%90%E9%AB%98%E7%BC%96%E7%A8%8B.html#41-%E5%87%BD%E6%95%B0%E5%AF%B9%E8%B1%A1">4.1 函数对象</a>
+<ul>
+<li><a href="Cpp/Cpp_more/Cpp%E6%8F%90%E9%AB%98%E7%BC%96%E7%A8%8B.html#411-%E5%87%BD%E6%95%B0%E5%AF%B9%E8%B1%A1%E6%A6%82%E5%BF%B5">4.1.1 函数对象概念</a></li>
+<li><a href="Cpp/Cpp_more/Cpp%E6%8F%90%E9%AB%98%E7%BC%96%E7%A8%8B.html#412--%E5%87%BD%E6%95%B0%E5%AF%B9%E8%B1%A1%E4%BD%BF%E7%94%A8">4.1.2  函数对象使用</a></li>
+</ul>
+</li>
+<li><a href="Cpp/Cpp_more/Cpp%E6%8F%90%E9%AB%98%E7%BC%96%E7%A8%8B.html#42--%E8%B0%93%E8%AF%8D">4.2  谓词</a>
+<ul>
+<li><a href="Cpp/Cpp_more/Cpp%E6%8F%90%E9%AB%98%E7%BC%96%E7%A8%8B.html#421-%E8%B0%93%E8%AF%8D%E6%A6%82%E5%BF%B5">4.2.1 谓词概念</a></li>
+<li><a href="Cpp/Cpp_more/Cpp%E6%8F%90%E9%AB%98%E7%BC%96%E7%A8%8B.html#422-%E4%B8%80%E5%85%83%E8%B0%93%E8%AF%8D">4.2.2 一元谓词</a></li>
+<li><a href="Cpp/Cpp_more/Cpp%E6%8F%90%E9%AB%98%E7%BC%96%E7%A8%8B.html#423-%E4%BA%8C%E5%85%83%E8%B0%93%E8%AF%8D">4.2.3 二元谓词</a></li>
+</ul>
+</li>
+<li><a href="Cpp/Cpp_more/Cpp%E6%8F%90%E9%AB%98%E7%BC%96%E7%A8%8B.html#43-%E5%86%85%E5%BB%BA%E5%87%BD%E6%95%B0%E5%AF%B9%E8%B1%A1">4.3 内建函数对象</a>
+<ul>
+<li><a href="Cpp/Cpp_more/Cpp%E6%8F%90%E9%AB%98%E7%BC%96%E7%A8%8B.html#431-%E5%86%85%E5%BB%BA%E5%87%BD%E6%95%B0%E5%AF%B9%E8%B1%A1%E6%84%8F%E4%B9%89">4.3.1 内建函数对象意义</a></li>
+<li><a href="Cpp/Cpp_more/Cpp%E6%8F%90%E9%AB%98%E7%BC%96%E7%A8%8B.html#432-%E7%AE%97%E6%9C%AF%E4%BB%BF%E5%87%BD%E6%95%B0">4.3.2 算术仿函数</a></li>
+<li><a href="Cpp/Cpp_more/Cpp%E6%8F%90%E9%AB%98%E7%BC%96%E7%A8%8B.html#433-%E5%85%B3%E7%B3%BB%E4%BB%BF%E5%87%BD%E6%95%B0">4.3.3 关系仿函数</a></li>
+<li><a href="Cpp/Cpp_more/Cpp%E6%8F%90%E9%AB%98%E7%BC%96%E7%A8%8B.html#434-%E9%80%BB%E8%BE%91%E4%BB%BF%E5%87%BD%E6%95%B0">4.3.4 逻辑仿函数</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="Cpp/Cpp_more/Cpp%E6%8F%90%E9%AB%98%E7%BC%96%E7%A8%8B.html#5-stl--%E5%B8%B8%E7%94%A8%E7%AE%97%E6%B3%95">5 STL- 常用算法</a>
+<ul>
+<li><a href="Cpp/Cpp_more/Cpp%E6%8F%90%E9%AB%98%E7%BC%96%E7%A8%8B.html#51-%E5%B8%B8%E7%94%A8%E9%81%8D%E5%8E%86%E7%AE%97%E6%B3%95">5.1 常用遍历算法</a>
+<ul>
+<li><a href="Cpp/Cpp_more/Cpp%E6%8F%90%E9%AB%98%E7%BC%96%E7%A8%8B.html#511-for_each">5.1.1 for_each</a></li>
+<li><a href="Cpp/Cpp_more/Cpp%E6%8F%90%E9%AB%98%E7%BC%96%E7%A8%8B.html#512-transform">5.1.2 transform</a></li>
+</ul>
+</li>
+<li><a href="Cpp/Cpp_more/Cpp%E6%8F%90%E9%AB%98%E7%BC%96%E7%A8%8B.html#52-%E5%B8%B8%E7%94%A8%E6%9F%A5%E6%89%BE%E7%AE%97%E6%B3%95">5.2 常用查找算法</a>
+<ul>
+<li><a href="Cpp/Cpp_more/Cpp%E6%8F%90%E9%AB%98%E7%BC%96%E7%A8%8B.html#521-find">5.2.1 find</a></li>
+<li><a href="Cpp/Cpp_more/Cpp%E6%8F%90%E9%AB%98%E7%BC%96%E7%A8%8B.html#522-find_if">5.2.2 find_if</a></li>
+<li><a href="Cpp/Cpp_more/Cpp%E6%8F%90%E9%AB%98%E7%BC%96%E7%A8%8B.html#523-adjacent_find">5.2.3 adjacent_find</a></li>
+<li><a href="Cpp/Cpp_more/Cpp%E6%8F%90%E9%AB%98%E7%BC%96%E7%A8%8B.html#524-binary_search">5.2.4 binary_search</a></li>
+<li><a href="Cpp/Cpp_more/Cpp%E6%8F%90%E9%AB%98%E7%BC%96%E7%A8%8B.html#525-count">5.2.5 count</a></li>
+<li><a href="Cpp/Cpp_more/Cpp%E6%8F%90%E9%AB%98%E7%BC%96%E7%A8%8B.html#526-count_if">5.2.6 count_if</a></li>
+</ul>
+</li>
+<li><a href="Cpp/Cpp_more/Cpp%E6%8F%90%E9%AB%98%E7%BC%96%E7%A8%8B.html#53-%E5%B8%B8%E7%94%A8%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95">5.3 常用排序算法</a>
+<ul>
+<li><a href="Cpp/Cpp_more/Cpp%E6%8F%90%E9%AB%98%E7%BC%96%E7%A8%8B.html#531-sort">5.3.1 sort</a></li>
+<li><a href="Cpp/Cpp_more/Cpp%E6%8F%90%E9%AB%98%E7%BC%96%E7%A8%8B.html#532-random_shuffle">5.3.2 random_shuffle</a></li>
+<li><a href="Cpp/Cpp_more/Cpp%E6%8F%90%E9%AB%98%E7%BC%96%E7%A8%8B.html#533-merge">5.3.3 merge</a></li>
+<li><a href="Cpp/Cpp_more/Cpp%E6%8F%90%E9%AB%98%E7%BC%96%E7%A8%8B.html#534-reverse">5.3.4 reverse</a></li>
+</ul>
+</li>
+<li><a href="Cpp/Cpp_more/Cpp%E6%8F%90%E9%AB%98%E7%BC%96%E7%A8%8B.html#54-%E5%B8%B8%E7%94%A8%E6%8B%B7%E8%B4%9D%E5%92%8C%E6%9B%BF%E6%8D%A2%E7%AE%97%E6%B3%95">5.4 常用拷贝和替换算法</a>
+<ul>
+<li><a href="Cpp/Cpp_more/Cpp%E6%8F%90%E9%AB%98%E7%BC%96%E7%A8%8B.html#541-copy">5.4.1 copy</a></li>
+<li><a href="Cpp/Cpp_more/Cpp%E6%8F%90%E9%AB%98%E7%BC%96%E7%A8%8B.html#542-replace">5.4.2 replace</a></li>
+<li><a href="Cpp/Cpp_more/Cpp%E6%8F%90%E9%AB%98%E7%BC%96%E7%A8%8B.html#543-replace_if">5.4.3 replace_if</a></li>
+<li><a href="Cpp/Cpp_more/Cpp%E6%8F%90%E9%AB%98%E7%BC%96%E7%A8%8B.html#544-swap">5.4.4 swap</a></li>
+</ul>
+</li>
+<li><a href="Cpp/Cpp_more/Cpp%E6%8F%90%E9%AB%98%E7%BC%96%E7%A8%8B.html#55-%E5%B8%B8%E7%94%A8%E7%AE%97%E6%9C%AF%E7%94%9F%E6%88%90%E7%AE%97%E6%B3%95">5.5 常用算术生成算法</a>
+<ul>
+<li><a href="Cpp/Cpp_more/Cpp%E6%8F%90%E9%AB%98%E7%BC%96%E7%A8%8B.html#551-accumulate">5.5.1 accumulate</a></li>
+<li><a href="Cpp/Cpp_more/Cpp%E6%8F%90%E9%AB%98%E7%BC%96%E7%A8%8B.html#552-fill">5.5.2 fill</a></li>
+</ul>
+</li>
+<li><a href="Cpp/Cpp_more/Cpp%E6%8F%90%E9%AB%98%E7%BC%96%E7%A8%8B.html#56-%E5%B8%B8%E7%94%A8%E9%9B%86%E5%90%88%E7%AE%97%E6%B3%95">5.6 常用集合算法</a>
+<ul>
+<li><a href="Cpp/Cpp_more/Cpp%E6%8F%90%E9%AB%98%E7%BC%96%E7%A8%8B.html#561-set_intersection">5.6.1 set_intersection</a></li>
+<li><a href="Cpp/Cpp_more/Cpp%E6%8F%90%E9%AB%98%E7%BC%96%E7%A8%8B.html#562-set_union">5.6.2 set_union</a></li>
+<li><a href="Cpp/Cpp_more/Cpp%E6%8F%90%E9%AB%98%E7%BC%96%E7%A8%8B.html#563--set_difference">5.6.3  set_difference</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 <h2 id="1-模板"><a class="header" href="#1-模板">1 模板</a></h2>
 <h3 id="11-模板的概念"><a class="header" href="#11-模板的概念">1.1 模板的概念</a></h3>

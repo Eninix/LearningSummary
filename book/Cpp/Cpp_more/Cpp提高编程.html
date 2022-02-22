@@ -75,7 +75,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../../index.html">介绍</a></li><li class="chapter-item expanded affix "><li class="part-title">Git笔记</li><li class="chapter-item expanded "><a href="../../Git/git.html"><strong aria-hidden="true">1.</strong> Git的操作</a></li><li class="chapter-item expanded "><a href="../../Github/github-cli.html"><strong aria-hidden="true">2.</strong> Github-Cli的操作</a></li><li class="chapter-item expanded affix "><li class="part-title">C++笔记</li><li class="chapter-item expanded "><a href="../../Cpp/Cpp_base/Cpp基础入门.html"><strong aria-hidden="true">3.</strong> Cpp基础</a></li><li class="chapter-item expanded "><a href="../../Cpp/Cpp_core/Cpp核心编程.html"><strong aria-hidden="true">4.</strong> Cpp核心</a></li><li class="chapter-item expanded "><a href="../../Cpp/Cpp_more/Cpp提高编程.html" class="active"><strong aria-hidden="true">5.</strong> Cpp提高</a></li><li class="chapter-item expanded affix "><li class="part-title">Redis笔记</li><li class="chapter-item expanded "><a href="../../Redis/redis.html"><strong aria-hidden="true">6.</strong> Redis的操作</a></li></ol>
+                <ol class="chapter"><li class="chapter-item affix "><a href="../../index.html">介绍</a></li><li class="chapter-item affix "><li class="part-title">Git笔记</li><li class="chapter-item "><a href="../../Git/git.html"><strong aria-hidden="true">1.</strong> Git的操作</a></li><li class="chapter-item "><a href="../../Github/github-cli.html"><strong aria-hidden="true">2.</strong> Github-Cli的操作</a></li><li class="chapter-item affix "><li class="part-title">C++笔记</li><li class="chapter-item "><a href="../../Cpp/Cpp_base/Cpp基础入门.html"><strong aria-hidden="true">3.</strong> Cpp基础</a></li><li class="chapter-item "><a href="../../Cpp/Cpp_core/Cpp核心编程.html"><strong aria-hidden="true">4.</strong> Cpp核心</a></li><li class="chapter-item expanded "><a href="../../Cpp/Cpp_more/Cpp提高编程.html" class="active"><strong aria-hidden="true">5.</strong> Cpp提高</a></li><li class="chapter-item affix "><li class="part-title">Redis笔记</li><li class="chapter-item "><a href="../../Redis/redis.html"><strong aria-hidden="true">6.</strong> Redis的操作</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -140,6 +140,227 @@
                         <h1 id="c提高编程"><a class="header" href="#c提高编程">C++提高编程</a></h1>
 <ul>
 <li>本阶段主要针对C++==泛型编程==和==STL==技术做详细讲解，探讨C++更深层的使用</li>
+</ul>
+<ul>
+<li><a href="#c%E6%8F%90%E9%AB%98%E7%BC%96%E7%A8%8B">C++提高编程</a>
+<ul>
+<li><a href="#1-%E6%A8%A1%E6%9D%BF">1 模板</a>
+<ul>
+<li><a href="#11-%E6%A8%A1%E6%9D%BF%E7%9A%84%E6%A6%82%E5%BF%B5">1.1 模板的概念</a></li>
+<li><a href="#12-%E5%87%BD%E6%95%B0%E6%A8%A1%E6%9D%BF">1.2 函数模板</a>
+<ul>
+<li><a href="#121-%E5%87%BD%E6%95%B0%E6%A8%A1%E6%9D%BF%E8%AF%AD%E6%B3%95">1.2.1 函数模板语法</a></li>
+<li><a href="#122-%E5%87%BD%E6%95%B0%E6%A8%A1%E6%9D%BF%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9">1.2.2 函数模板注意事项</a></li>
+<li><a href="#123-%E5%87%BD%E6%95%B0%E6%A8%A1%E6%9D%BF%E6%A1%88%E4%BE%8B">1.2.3 函数模板案例</a></li>
+<li><a href="#124-%E6%99%AE%E9%80%9A%E5%87%BD%E6%95%B0%E4%B8%8E%E5%87%BD%E6%95%B0%E6%A8%A1%E6%9D%BF%E7%9A%84%E5%8C%BA%E5%88%AB">1.2.4 普通函数与函数模板的区别</a></li>
+<li><a href="#125-%E6%99%AE%E9%80%9A%E5%87%BD%E6%95%B0%E4%B8%8E%E5%87%BD%E6%95%B0%E6%A8%A1%E6%9D%BF%E7%9A%84%E8%B0%83%E7%94%A8%E8%A7%84%E5%88%99">1.2.5 普通函数与函数模板的调用规则</a></li>
+<li><a href="#126-%E6%A8%A1%E6%9D%BF%E7%9A%84%E5%B1%80%E9%99%90%E6%80%A7">1.2.6 模板的局限性</a></li>
+</ul>
+</li>
+<li><a href="#13-%E7%B1%BB%E6%A8%A1%E6%9D%BF">1.3 类模板</a>
+<ul>
+<li><a href="#131-%E7%B1%BB%E6%A8%A1%E6%9D%BF%E8%AF%AD%E6%B3%95">1.3.1 类模板语法</a></li>
+<li><a href="#132-%E7%B1%BB%E6%A8%A1%E6%9D%BF%E4%B8%8E%E5%87%BD%E6%95%B0%E6%A8%A1%E6%9D%BF%E5%8C%BA%E5%88%AB">1.3.2 类模板与函数模板区别</a></li>
+<li><a href="#133-%E7%B1%BB%E6%A8%A1%E6%9D%BF%E4%B8%AD%E6%88%90%E5%91%98%E5%87%BD%E6%95%B0%E5%88%9B%E5%BB%BA%E6%97%B6%E6%9C%BA">1.3.3 类模板中成员函数创建时机</a></li>
+<li><a href="#134-%E7%B1%BB%E6%A8%A1%E6%9D%BF%E5%AF%B9%E8%B1%A1%E5%81%9A%E5%87%BD%E6%95%B0%E5%8F%82%E6%95%B0">1.3.4 类模板对象做函数参数</a></li>
+<li><a href="#135-%E7%B1%BB%E6%A8%A1%E6%9D%BF%E4%B8%8E%E7%BB%A7%E6%89%BF">1.3.5 类模板与继承</a></li>
+<li><a href="#136-%E7%B1%BB%E6%A8%A1%E6%9D%BF%E6%88%90%E5%91%98%E5%87%BD%E6%95%B0%E7%B1%BB%E5%A4%96%E5%AE%9E%E7%8E%B0">1.3.6 类模板成员函数类外实现</a></li>
+<li><a href="#137-%E7%B1%BB%E6%A8%A1%E6%9D%BF%E5%88%86%E6%96%87%E4%BB%B6%E7%BC%96%E5%86%99">1.3.7 类模板分文件编写</a></li>
+<li><a href="#138-%E7%B1%BB%E6%A8%A1%E6%9D%BF%E4%B8%8E%E5%8F%8B%E5%85%83">1.3.8 类模板与友元</a></li>
+<li><a href="#139-%E7%B1%BB%E6%A8%A1%E6%9D%BF%E6%A1%88%E4%BE%8B">1.3.9 类模板案例</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#2-stl%E5%88%9D%E8%AF%86">2 STL初识</a>
+<ul>
+<li><a href="#21-stl%E7%9A%84%E8%AF%9E%E7%94%9F">2.1 STL的诞生</a></li>
+<li><a href="#22-stl%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5">2.2 STL基本概念</a></li>
+<li><a href="#23-stl%E5%85%AD%E5%A4%A7%E7%BB%84%E4%BB%B6">2.3 STL六大组件</a></li>
+<li><a href="#24--stl%E4%B8%AD%E5%AE%B9%E5%99%A8%E7%AE%97%E6%B3%95%E8%BF%AD%E4%BB%A3%E5%99%A8">2.4  STL中容器、算法、迭代器</a></li>
+<li><a href="#25-%E5%AE%B9%E5%99%A8%E7%AE%97%E6%B3%95%E8%BF%AD%E4%BB%A3%E5%99%A8%E5%88%9D%E8%AF%86">2.5 容器算法迭代器初识</a>
+<ul>
+<li><a href="#251-vector%E5%AD%98%E6%94%BE%E5%86%85%E7%BD%AE%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B">2.5.1 vector存放内置数据类型</a></li>
+<li><a href="#252-vector%E5%AD%98%E6%94%BE%E8%87%AA%E5%AE%9A%E4%B9%89%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B">2.5.2 Vector存放自定义数据类型</a></li>
+<li><a href="#253-vector%E5%AE%B9%E5%99%A8%E5%B5%8C%E5%A5%97%E5%AE%B9%E5%99%A8">2.5.3 Vector容器嵌套容器</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#3-stl--%E5%B8%B8%E7%94%A8%E5%AE%B9%E5%99%A8">3 STL- 常用容器</a>
+<ul>
+<li><a href="#31-string%E5%AE%B9%E5%99%A8">3.1 string容器</a>
+<ul>
+<li><a href="#311-string%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5">3.1.1 string基本概念</a></li>
+<li><a href="#312-string%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0">3.1.2 string构造函数</a></li>
+<li><a href="#313-string%E8%B5%8B%E5%80%BC%E6%93%8D%E4%BD%9C">3.1.3 string赋值操作</a></li>
+<li><a href="#314-string%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%8B%BC%E6%8E%A5">3.1.4 string字符串拼接</a></li>
+<li><a href="#315-string%E6%9F%A5%E6%89%BE%E5%92%8C%E6%9B%BF%E6%8D%A2">3.1.5 string查找和替换</a></li>
+<li><a href="#316-string%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%AF%94%E8%BE%83">3.1.6 string字符串比较</a></li>
+<li><a href="#317-string%E5%AD%97%E7%AC%A6%E5%AD%98%E5%8F%96">3.1.7 string字符存取</a></li>
+<li><a href="#318-string%E6%8F%92%E5%85%A5%E5%92%8C%E5%88%A0%E9%99%A4">3.1.8 string插入和删除</a></li>
+<li><a href="#319-string%E5%AD%90%E4%B8%B2">3.1.9 string子串</a></li>
+</ul>
+</li>
+<li><a href="#32-vector%E5%AE%B9%E5%99%A8">3.2 vector容器</a>
+<ul>
+<li><a href="#321-vector%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5">3.2.1 vector基本概念</a></li>
+<li><a href="#322-vector%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0">3.2.2 vector构造函数</a></li>
+<li><a href="#323-vector%E8%B5%8B%E5%80%BC%E6%93%8D%E4%BD%9C">3.2.3 vector赋值操作</a></li>
+<li><a href="#324--vector%E5%AE%B9%E9%87%8F%E5%92%8C%E5%A4%A7%E5%B0%8F">3.2.4  vector容量和大小</a></li>
+<li><a href="#325-vector%E6%8F%92%E5%85%A5%E5%92%8C%E5%88%A0%E9%99%A4">3.2.5 vector插入和删除</a></li>
+<li><a href="#326-vector%E6%95%B0%E6%8D%AE%E5%AD%98%E5%8F%96">3.2.6 vector数据存取</a></li>
+<li><a href="#327-vector%E4%BA%92%E6%8D%A2%E5%AE%B9%E5%99%A8">3.2.7 vector互换容器</a></li>
+<li><a href="#328-vector%E9%A2%84%E7%95%99%E7%A9%BA%E9%97%B4">3.2.8 vector预留空间</a></li>
+</ul>
+</li>
+<li><a href="#33-deque%E5%AE%B9%E5%99%A8">3.3 deque容器</a>
+<ul>
+<li><a href="#331-deque%E5%AE%B9%E5%99%A8%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5">3.3.1 deque容器基本概念</a></li>
+<li><a href="#332-deque%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0">3.3.2 deque构造函数</a></li>
+<li><a href="#333-deque%E8%B5%8B%E5%80%BC%E6%93%8D%E4%BD%9C">3.3.3 deque赋值操作</a></li>
+<li><a href="#334-deque%E5%A4%A7%E5%B0%8F%E6%93%8D%E4%BD%9C">3.3.4 deque大小操作</a></li>
+<li><a href="#335-deque-%E6%8F%92%E5%85%A5%E5%92%8C%E5%88%A0%E9%99%A4">3.3.5 deque 插入和删除</a></li>
+<li><a href="#336-deque-%E6%95%B0%E6%8D%AE%E5%AD%98%E5%8F%96">3.3.6 deque 数据存取</a></li>
+<li><a href="#337--deque-%E6%8E%92%E5%BA%8F">3.3.7  deque 排序</a></li>
+</ul>
+</li>
+<li><a href="#34-%E6%A1%88%E4%BE%8B-%E8%AF%84%E5%A7%94%E6%89%93%E5%88%86">3.4 案例-评委打分</a>
+<ul>
+<li><a href="#341-%E6%A1%88%E4%BE%8B%E6%8F%8F%E8%BF%B0">3.4.1 案例描述</a></li>
+<li><a href="#342-%E5%AE%9E%E7%8E%B0%E6%AD%A5%E9%AA%A4">3.4.2 实现步骤</a></li>
+</ul>
+</li>
+<li><a href="#35-stack%E5%AE%B9%E5%99%A8">3.5 stack容器</a>
+<ul>
+<li><a href="#351-stack-%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5">3.5.1 stack 基本概念</a></li>
+<li><a href="#352-stack-%E5%B8%B8%E7%94%A8%E6%8E%A5%E5%8F%A3">3.5.2 stack 常用接口</a></li>
+</ul>
+</li>
+<li><a href="#36-queue-%E5%AE%B9%E5%99%A8">3.6 queue 容器</a>
+<ul>
+<li><a href="#361-queue-%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5">3.6.1 queue 基本概念</a></li>
+<li><a href="#362-queue-%E5%B8%B8%E7%94%A8%E6%8E%A5%E5%8F%A3">3.6.2 queue 常用接口</a></li>
+</ul>
+</li>
+<li><a href="#37-list%E5%AE%B9%E5%99%A8">3.7 list容器</a>
+<ul>
+<li><a href="#371-list%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5">3.7.1 list基本概念</a></li>
+<li><a href="#372--list%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0">3.7.2  list构造函数</a></li>
+<li><a href="#373-list-%E8%B5%8B%E5%80%BC%E5%92%8C%E4%BA%A4%E6%8D%A2">3.7.3 list 赋值和交换</a></li>
+<li><a href="#374-list-%E5%A4%A7%E5%B0%8F%E6%93%8D%E4%BD%9C">3.7.4 list 大小操作</a></li>
+<li><a href="#375-list-%E6%8F%92%E5%85%A5%E5%92%8C%E5%88%A0%E9%99%A4">3.7.5 list 插入和删除</a></li>
+<li><a href="#376-list-%E6%95%B0%E6%8D%AE%E5%AD%98%E5%8F%96">3.7.6 list 数据存取</a></li>
+<li><a href="#377-list-%E5%8F%8D%E8%BD%AC%E5%92%8C%E6%8E%92%E5%BA%8F">3.7.7 list 反转和排序</a></li>
+<li><a href="#378-%E6%8E%92%E5%BA%8F%E6%A1%88%E4%BE%8B">3.7.8 排序案例</a></li>
+</ul>
+</li>
+<li><a href="#38-set-multiset-%E5%AE%B9%E5%99%A8">3.8 set/ multiset 容器</a>
+<ul>
+<li><a href="#381-set%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5">3.8.1 set基本概念</a></li>
+<li><a href="#382-set%E6%9E%84%E9%80%A0%E5%92%8C%E8%B5%8B%E5%80%BC">3.8.2 set构造和赋值</a></li>
+<li><a href="#383-set%E5%A4%A7%E5%B0%8F%E5%92%8C%E4%BA%A4%E6%8D%A2">3.8.3 set大小和交换</a></li>
+<li><a href="#384-set%E6%8F%92%E5%85%A5%E5%92%8C%E5%88%A0%E9%99%A4">3.8.4 set插入和删除</a></li>
+<li><a href="#385-set%E6%9F%A5%E6%89%BE%E5%92%8C%E7%BB%9F%E8%AE%A1">3.8.5 set查找和统计</a></li>
+<li><a href="#386-set%E5%92%8Cmultiset%E5%8C%BA%E5%88%AB">3.8.6 set和multiset区别</a></li>
+<li><a href="#387-pair%E5%AF%B9%E7%BB%84%E5%88%9B%E5%BB%BA">3.8.7 pair对组创建</a></li>
+<li><a href="#388-set%E5%AE%B9%E5%99%A8%E6%8E%92%E5%BA%8F">3.8.8 set容器排序</a></li>
+</ul>
+</li>
+<li><a href="#39-map-multimap%E5%AE%B9%E5%99%A8">3.9 map/ multimap容器</a>
+<ul>
+<li><a href="#391-map%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5">3.9.1 map基本概念</a></li>
+<li><a href="#392--map%E6%9E%84%E9%80%A0%E5%92%8C%E8%B5%8B%E5%80%BC">3.9.2  map构造和赋值</a></li>
+<li><a href="#393-map%E5%A4%A7%E5%B0%8F%E5%92%8C%E4%BA%A4%E6%8D%A2">3.9.3 map大小和交换</a></li>
+<li><a href="#394-map%E6%8F%92%E5%85%A5%E5%92%8C%E5%88%A0%E9%99%A4">3.9.4 map插入和删除</a></li>
+<li><a href="#395-map%E6%9F%A5%E6%89%BE%E5%92%8C%E7%BB%9F%E8%AE%A1">3.9.5 map查找和统计</a></li>
+<li><a href="#396-map%E5%AE%B9%E5%99%A8%E6%8E%92%E5%BA%8F">3.9.6 map容器排序</a></li>
+</ul>
+</li>
+<li><a href="#310-%E6%A1%88%E4%BE%8B-%E5%91%98%E5%B7%A5%E5%88%86%E7%BB%84">3.10 案例-员工分组</a>
+<ul>
+<li><a href="#3101-%E6%A1%88%E4%BE%8B%E6%8F%8F%E8%BF%B0">3.10.1 案例描述</a></li>
+<li><a href="#3102-%E5%AE%9E%E7%8E%B0%E6%AD%A5%E9%AA%A4">3.10.2 实现步骤</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#4-stl--%E5%87%BD%E6%95%B0%E5%AF%B9%E8%B1%A1">4 STL- 函数对象</a>
+<ul>
+<li><a href="#41-%E5%87%BD%E6%95%B0%E5%AF%B9%E8%B1%A1">4.1 函数对象</a>
+<ul>
+<li><a href="#411-%E5%87%BD%E6%95%B0%E5%AF%B9%E8%B1%A1%E6%A6%82%E5%BF%B5">4.1.1 函数对象概念</a></li>
+<li><a href="#412--%E5%87%BD%E6%95%B0%E5%AF%B9%E8%B1%A1%E4%BD%BF%E7%94%A8">4.1.2  函数对象使用</a></li>
+</ul>
+</li>
+<li><a href="#42--%E8%B0%93%E8%AF%8D">4.2  谓词</a>
+<ul>
+<li><a href="#421-%E8%B0%93%E8%AF%8D%E6%A6%82%E5%BF%B5">4.2.1 谓词概念</a></li>
+<li><a href="#422-%E4%B8%80%E5%85%83%E8%B0%93%E8%AF%8D">4.2.2 一元谓词</a></li>
+<li><a href="#423-%E4%BA%8C%E5%85%83%E8%B0%93%E8%AF%8D">4.2.3 二元谓词</a></li>
+</ul>
+</li>
+<li><a href="#43-%E5%86%85%E5%BB%BA%E5%87%BD%E6%95%B0%E5%AF%B9%E8%B1%A1">4.3 内建函数对象</a>
+<ul>
+<li><a href="#431-%E5%86%85%E5%BB%BA%E5%87%BD%E6%95%B0%E5%AF%B9%E8%B1%A1%E6%84%8F%E4%B9%89">4.3.1 内建函数对象意义</a></li>
+<li><a href="#432-%E7%AE%97%E6%9C%AF%E4%BB%BF%E5%87%BD%E6%95%B0">4.3.2 算术仿函数</a></li>
+<li><a href="#433-%E5%85%B3%E7%B3%BB%E4%BB%BF%E5%87%BD%E6%95%B0">4.3.3 关系仿函数</a></li>
+<li><a href="#434-%E9%80%BB%E8%BE%91%E4%BB%BF%E5%87%BD%E6%95%B0">4.3.4 逻辑仿函数</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#5-stl--%E5%B8%B8%E7%94%A8%E7%AE%97%E6%B3%95">5 STL- 常用算法</a>
+<ul>
+<li><a href="#51-%E5%B8%B8%E7%94%A8%E9%81%8D%E5%8E%86%E7%AE%97%E6%B3%95">5.1 常用遍历算法</a>
+<ul>
+<li><a href="#511-for_each">5.1.1 for_each</a></li>
+<li><a href="#512-transform">5.1.2 transform</a></li>
+</ul>
+</li>
+<li><a href="#52-%E5%B8%B8%E7%94%A8%E6%9F%A5%E6%89%BE%E7%AE%97%E6%B3%95">5.2 常用查找算法</a>
+<ul>
+<li><a href="#521-find">5.2.1 find</a></li>
+<li><a href="#522-find_if">5.2.2 find_if</a></li>
+<li><a href="#523-adjacent_find">5.2.3 adjacent_find</a></li>
+<li><a href="#524-binary_search">5.2.4 binary_search</a></li>
+<li><a href="#525-count">5.2.5 count</a></li>
+<li><a href="#526-count_if">5.2.6 count_if</a></li>
+</ul>
+</li>
+<li><a href="#53-%E5%B8%B8%E7%94%A8%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95">5.3 常用排序算法</a>
+<ul>
+<li><a href="#531-sort">5.3.1 sort</a></li>
+<li><a href="#532-random_shuffle">5.3.2 random_shuffle</a></li>
+<li><a href="#533-merge">5.3.3 merge</a></li>
+<li><a href="#534-reverse">5.3.4 reverse</a></li>
+</ul>
+</li>
+<li><a href="#54-%E5%B8%B8%E7%94%A8%E6%8B%B7%E8%B4%9D%E5%92%8C%E6%9B%BF%E6%8D%A2%E7%AE%97%E6%B3%95">5.4 常用拷贝和替换算法</a>
+<ul>
+<li><a href="#541-copy">5.4.1 copy</a></li>
+<li><a href="#542-replace">5.4.2 replace</a></li>
+<li><a href="#543-replace_if">5.4.3 replace_if</a></li>
+<li><a href="#544-swap">5.4.4 swap</a></li>
+</ul>
+</li>
+<li><a href="#55-%E5%B8%B8%E7%94%A8%E7%AE%97%E6%9C%AF%E7%94%9F%E6%88%90%E7%AE%97%E6%B3%95">5.5 常用算术生成算法</a>
+<ul>
+<li><a href="#551-accumulate">5.5.1 accumulate</a></li>
+<li><a href="#552-fill">5.5.2 fill</a></li>
+</ul>
+</li>
+<li><a href="#56-%E5%B8%B8%E7%94%A8%E9%9B%86%E5%90%88%E7%AE%97%E6%B3%95">5.6 常用集合算法</a>
+<ul>
+<li><a href="#561-set_intersection">5.6.1 set_intersection</a></li>
+<li><a href="#562-set_union">5.6.2 set_union</a></li>
+<li><a href="#563--set_difference">5.6.3  set_difference</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 <h2 id="1-模板"><a class="header" href="#1-模板">1 模板</a></h2>
 <h3 id="11-模板的概念"><a class="header" href="#11-模板的概念">1.1 模板的概念</a></h3>
