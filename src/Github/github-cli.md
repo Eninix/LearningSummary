@@ -1,6 +1,20 @@
 # Github-Cli的使用
 
------
+
+- [Github-Cli的使用](#github-cli的使用)
+	- [1.官网及下载地址与安装手段](#1官网及下载地址与安装手段)
+	- [2.首次运行](#2首次运行)
+	- [3.基础操作](#3基础操作)
+		- [3.1克隆仓库（gh repo clone）](#31克隆仓库gh-repo-clone)
+		- [3.2打开当前github库的网页](#32打开当前github库的网页)
+		- [3.3查看某个库的README](#33查看某个库的readme)
+	- [4发布pull requests](#4发布pull-requests)
+		- [4.1先在分支typo,随便改一下文件，并push](#41先在分支typo随便改一下文件并push)
+		- [4.2使用gh pr creat创建一个pull requests](#42使用gh-pr-creat创建一个pull-requests)
+		- [4.3合并pull requests](#43合并pull-requests)
+	- [5.发布issues](#5发布issues)
+	- [6.写在最後](#6写在最後)
+
 
 ## 1.官网及下载地址与安装手段
 
