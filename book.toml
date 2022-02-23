@@ -2,10 +2,13 @@
 title = "SummaryBook"
 authors = ["Eninix"]
 description = "The book is my notes."
+language = "zh_CN"
+multilingual = true
 src = "src"
 
 [output.html]
 git-repository-url = "https://github.com/Eninix/SummaryBook"
+site-url = "/SummaryBook/book/"
 
 [output.html.print]
 enable = true    # include support for printable output
