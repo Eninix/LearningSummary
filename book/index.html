@@ -75,7 +75,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item affix "><a href="index.html" class="active">介绍</a></li><li class="chapter-item affix "><li class="part-title">Git笔记</li><li class="chapter-item "><a href="Git/git.html"><strong aria-hidden="true">1.</strong> Git的操作</a></li><li class="chapter-item "><a href="Github/github-cli.html"><strong aria-hidden="true">2.</strong> Github-Cli的操作</a></li><li class="chapter-item affix "><li class="part-title">C++笔记</li><li class="chapter-item "><a href="Cpp/Cpp_base/Cpp基础入门.html"><strong aria-hidden="true">3.</strong> Cpp基础</a></li><li class="chapter-item "><a href="Cpp/Cpp_core/Cpp核心编程.html"><strong aria-hidden="true">4.</strong> Cpp核心</a></li><li class="chapter-item "><a href="Cpp/Cpp_more/Cpp提高编程.html"><strong aria-hidden="true">5.</strong> Cpp提高</a></li><li class="chapter-item affix "><li class="part-title">Redis笔记</li><li class="chapter-item "><a href="Redis/redis.html"><strong aria-hidden="true">6.</strong> Redis的操作</a></li><li class="chapter-item affix "><li class="part-title">Go</li><li class="chapter-item "><a href="Go/Web/goweb_base.html"><strong aria-hidden="true">7.</strong> GO WEB 基础</a></li></ol>
+                <ol class="chapter"><li class="chapter-item affix "><a href="index.html" class="active">介绍</a></li><li class="chapter-item affix "><li class="part-title">Git笔记</li><li class="chapter-item "><a href="Git/git.html"><strong aria-hidden="true">1.</strong> Git的操作</a></li><li class="chapter-item "><a href="Github/github-cli.html"><strong aria-hidden="true">2.</strong> Github-Cli的操作</a></li><li class="chapter-item affix "><li class="part-title">C++笔记</li><li class="chapter-item "><a href="Cpp/Cpp_base/Cpp基础入门.html"><strong aria-hidden="true">3.</strong> Cpp基础</a></li><li class="chapter-item "><a href="Cpp/Cpp_core/Cpp核心编程.html"><strong aria-hidden="true">4.</strong> Cpp核心</a></li><li class="chapter-item "><a href="Cpp/Cpp_more/Cpp提高编程.html"><strong aria-hidden="true">5.</strong> Cpp提高</a></li><li class="chapter-item affix "><li class="part-title">Redis笔记</li><li class="chapter-item "><a href="Redis/redis.html"><strong aria-hidden="true">6.</strong> Redis的操作</a></li><li class="chapter-item affix "><li class="part-title">Vue笔记</li><li class="chapter-item "><a href="Vue/basis/note.html"><strong aria-hidden="true">7.</strong> Vue基础</a></li><li class="chapter-item "><a href="Vue/router/day05_vue路由(1).html"><strong aria-hidden="true">8.</strong> Vue路由</a></li><li class="chapter-item "><a href="Vue/project/day06_vue前端工程化.html"><strong aria-hidden="true">9.</strong> Vue框架</a></li><li class="chapter-item affix "><li class="part-title">Go笔记</li><li class="chapter-item "><a href="Go/Web/goweb_base.html"><strong aria-hidden="true">10.</strong> GO WEB 基础</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -163,6 +163,20 @@
 
         </div>
 
+        <!-- Livereload script (if served using the cli tool) -->
+        <script type="text/javascript">
+            var socket = new WebSocket("ws://localhost:3000/__livereload");
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
         <script type="text/javascript">
             window.playground_copyable = true;
         </script>
