@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>GO WEB 基础 - SummaryBook</title>
+        <title>路由 - SummaryBook</title>
         <!-- Custom HTML head -->
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="The book is my notes.">
@@ -75,7 +75,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item affix "><a href="../../index.html">介绍</a></li><li class="chapter-item affix "><li class="part-title">Git笔记</li><li class="chapter-item "><a href="../../Git/git.html"><strong aria-hidden="true">1.</strong> Git的操作</a></li><li class="chapter-item "><a href="../../Github/github-cli.html"><strong aria-hidden="true">2.</strong> Github-Cli的操作</a></li><li class="chapter-item affix "><li class="part-title">C++笔记</li><li class="chapter-item "><a href="../../Cpp/Cpp_base/Cpp基础入门.html"><strong aria-hidden="true">3.</strong> Cpp基础</a></li><li class="chapter-item "><a href="../../Cpp/Cpp_core/Cpp核心编程.html"><strong aria-hidden="true">4.</strong> Cpp核心</a></li><li class="chapter-item "><a href="../../Cpp/Cpp_more/Cpp提高编程.html"><strong aria-hidden="true">5.</strong> Cpp提高</a></li><li class="chapter-item affix "><li class="part-title">Redis笔记</li><li class="chapter-item "><a href="../../Redis/redis.html"><strong aria-hidden="true">6.</strong> Redis的操作</a></li><li class="chapter-item affix "><li class="part-title">Vue笔记</li><li class="chapter-item "><a href="../../Vue/basis/note.html"><strong aria-hidden="true">7.</strong> Vue基础</a></li><li class="chapter-item "><a href="../../Vue/router/day05_vue路由(1).html"><strong aria-hidden="true">8.</strong> Vue路由</a></li><li class="chapter-item "><a href="../../Vue/project/day06_vue前端工程化.html"><strong aria-hidden="true">9.</strong> Vue框架</a></li><li class="chapter-item affix "><li class="part-title">Go笔记</li><li class="chapter-item expanded "><a href="../../Go/Web/goweb_base.html" class="active"><strong aria-hidden="true">10.</strong> GO WEB 基础</a></li><li class="chapter-item affix "><li class="part-title">Gin框架</li><li class="chapter-item "><a href="../../Go/gin/start.html"><strong aria-hidden="true">11.</strong> Gin入门</a></li><li class="chapter-item "><a href="../../Go/gin/router.html"><strong aria-hidden="true">12.</strong> 路由</a></li><li class="chapter-item "><div><strong aria-hidden="true">13.</strong> 上传文件</div></li><li class="chapter-item "><div><strong aria-hidden="true">14.</strong> HTML模板(Template)</div></li><li class="chapter-item "><div><strong aria-hidden="true">15.</strong> 中间件(Middleware)</div></li><li class="chapter-item "><div><strong aria-hidden="true">16.</strong> 热加载调试 Hot Reload</div></li></ol>
+                <ol class="chapter"><li class="chapter-item affix "><a href="../../index.html">介绍</a></li><li class="chapter-item affix "><li class="part-title">Git笔记</li><li class="chapter-item "><a href="../../Git/git.html"><strong aria-hidden="true">1.</strong> Git的操作</a></li><li class="chapter-item "><a href="../../Github/github-cli.html"><strong aria-hidden="true">2.</strong> Github-Cli的操作</a></li><li class="chapter-item affix "><li class="part-title">C++笔记</li><li class="chapter-item "><a href="../../Cpp/Cpp_base/Cpp基础入门.html"><strong aria-hidden="true">3.</strong> Cpp基础</a></li><li class="chapter-item "><a href="../../Cpp/Cpp_core/Cpp核心编程.html"><strong aria-hidden="true">4.</strong> Cpp核心</a></li><li class="chapter-item "><a href="../../Cpp/Cpp_more/Cpp提高编程.html"><strong aria-hidden="true">5.</strong> Cpp提高</a></li><li class="chapter-item affix "><li class="part-title">Redis笔记</li><li class="chapter-item "><a href="../../Redis/redis.html"><strong aria-hidden="true">6.</strong> Redis的操作</a></li><li class="chapter-item affix "><li class="part-title">Vue笔记</li><li class="chapter-item "><a href="../../Vue/basis/note.html"><strong aria-hidden="true">7.</strong> Vue基础</a></li><li class="chapter-item "><a href="../../Vue/router/day05_vue路由(1).html"><strong aria-hidden="true">8.</strong> Vue路由</a></li><li class="chapter-item "><a href="../../Vue/project/day06_vue前端工程化.html"><strong aria-hidden="true">9.</strong> Vue框架</a></li><li class="chapter-item affix "><li class="part-title">Go笔记</li><li class="chapter-item "><a href="../../Go/Web/goweb_base.html"><strong aria-hidden="true">10.</strong> GO WEB 基础</a></li><li class="chapter-item affix "><li class="part-title">Gin框架</li><li class="chapter-item "><a href="../../Go/gin/start.html"><strong aria-hidden="true">11.</strong> Gin入门</a></li><li class="chapter-item expanded "><a href="../../Go/gin/router.html" class="active"><strong aria-hidden="true">12.</strong> 路由</a></li><li class="chapter-item "><div><strong aria-hidden="true">13.</strong> 上传文件</div></li><li class="chapter-item "><div><strong aria-hidden="true">14.</strong> HTML模板(Template)</div></li><li class="chapter-item "><div><strong aria-hidden="true">15.</strong> 中间件(Middleware)</div></li><li class="chapter-item "><div><strong aria-hidden="true">16.</strong> 热加载调试 Hot Reload</div></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -137,99 +137,171 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="go-web-基础"><a class="header" href="#go-web-基础">GO WEB 基础</a></h1>
+                        <ul>
+<li><a href="#router">Router</a>
 <ul>
-<li><a href="#go-web-%E5%9F%BA%E7%A1%80">GO WEB 基础</a>
-<ul>
-<li><a href="#%E5%85%A5%E9%97%A8%E4%BB%A3%E7%A0%81">入门代码</a></li>
-<li><a href="#%E5%A4%84%E7%90%86%E8%A1%A8%E5%8D%95%E5%86%85%E5%AE%B9">处理表单内容</a></li>
+<li><a href="#%E6%97%A0%E5%8F%82%E6%95%B0">无参数</a></li>
+<li><a href="#%E8%A7%A3%E6%9E%90%E8%B7%AF%E5%BE%84%E5%8F%82%E6%95%B0">解析路径参数</a></li>
+<li><a href="#%E8%8E%B7%E5%8F%96query%E5%8F%82%E6%95%B0">获取Query参数</a></li>
+<li><a href="#%E8%8E%B7%E5%8F%96post%E5%8F%82%E6%95%B0">获取POST参数</a></li>
+<li><a href="#query%E5%92%8Cpost%E6%B7%B7%E5%90%88%E5%8F%82%E6%95%B0">Query和POST混合参数</a></li>
+<li><a href="#map%E5%8F%82%E6%95%B0%E5%AD%97%E5%85%B8%E5%8F%82%E6%95%B0">Map参数(字典参数)</a></li>
+<li><a href="#%E9%87%8D%E5%AE%9A%E5%90%91redirect">重定向(Redirect)</a></li>
+<li><a href="#%E5%88%86%E7%BB%84%E8%B7%AF%E7%94%B1grouping-routes">分组路由(Grouping Routes)</a></li>
 </ul>
 </li>
 </ul>
-<h2 id="入门代码"><a class="header" href="#入门代码">入门代码</a></h2>
-<pre><code class="language-go">package main
+<h1 id="router"><a class="header" href="#router">Router</a></h1>
+<p>路由方法有 GET, POST, PUT, PATCH, DELETE 和 OPTIONS，还有Any，可匹配以上任意类型的请求。</p>
+<h2 id="无参数"><a class="header" href="#无参数">无参数</a></h2>
+<pre><code class="language-go">// 无参数
+r.GET(&quot;/&quot;, func(c *gin.Context) {
+	c.String(http.StatusOK, &quot;Who are you?&quot;)
+})
 
-import (
-	&quot;fmt&quot;
-	&quot;log&quot;
-	&quot;net/http&quot;
-	&quot;strings&quot;
-)
-
-func sayhello(w http.ResponseWriter, r *http.Request) { // w,r 分别是输出到网页的文件指针，和从访问参数得到的信息
-	r.ParseForm()                  //解析参数，默认是不会解析的
-	fmt.Println(&quot;r.Form:&quot;, r.Form) //这些信息是输出到服务器端的打印信息
-	fmt.Println()
-	fmt.Println(&quot;r.URL.Path:&quot;, r.URL.Path) //访问的路径
-	fmt.Println()
-	fmt.Println(&quot;r.URL.Scheme:&quot;, r.URL.Scheme) //r.URL.Scheme
-	fmt.Println()
-	for k, v := range r.Form { //循环输出r.Form
-		fmt.Println(&quot;key:&quot;, k, &quot;  val:&quot;, strings.Join(v, &quot;&quot;))
-	}
-	fmt.Println(&quot;----------------------&quot;)
-	fmt.Fprintf(w, &quot;Hello, this is '/hello'!&quot;) //给客户的回复
-}
-
-func sayhi(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprintf(w, &quot;Hello, this is '/hi'!&quot;)
-}
-
-func main() {
-	http.HandleFunc(&quot;/hello&quot;, sayhello)               //设置访问的路由,及其处理函数
-	http.HandleFunc(&quot;/hi&quot;, sayhi)                     //设置访问的路由,及其处理函数
-	err := http.ListenAndServe(&quot;127.0.0.1:9090&quot;, nil) //设置监听的端口,并返回错误
-	if err != nil {                                   //错误处理
-		log.Fatal(&quot;ListenAndServe err:&quot;, err)
-	}
-}
+/*
+$ curl http://localhost:9999/
+Who are you?
+*/
 </code></pre>
-<p>下图是，在浏览器访问后的输出：</p>
-<p><img src="goweb_base.assets/image-20220224232149242.png" alt="image-20220224232149242" /></p>
-<p><img src="goweb_base.assets/image-20220224232304343.png" alt="image-20220224232304343" /></p>
-<h2 id="处理表单内容"><a class="header" href="#处理表单内容">处理表单内容</a></h2>
-<pre><code class="language-go">// 登陆处理函数
-func login(w http.ResponseWriter, r *http.Request) {
-	fmt.Println(&quot;method:&quot;, r.Method) //获取请求的方法
-	r.ParseForm()                    //解析参数，默认是不会解析的
-	if r.Method == &quot;GET&quot; {
-		t, _ := template.ParseFiles(&quot;login.html&quot;)
-		log.Println(t.Execute(w, nil))
-	} else {
-		//请求的是登录数据，那么执行登录的逻辑判断
-		fmt.Println(&quot;username:&quot;, r.Form[&quot;username&quot;])
-		fmt.Println(&quot;password:&quot;, r.Form[&quot;password&quot;])
-	}
+<h2 id="解析路径参数"><a class="header" href="#解析路径参数">解析路径参数</a></h2>
+<p>有时候我们需要动态的路由，如 /user/:name，通过调用不同的 url 来传入不同的 name。/user/:name/<em>role，</em> 代表可选。</p>
+<pre><code class="language-go">r.GET(&quot;/user/:name&quot;, func(c *gin.Context) {
+	name := c.Param(&quot;name&quot;)
+	c.String(http.StatusOK, &quot;Hello %s&quot;, name)
+})
+
+/*
+$ curl http://localhost:9999/user/abcd
+Hello abcd
+*/
+</code></pre>
+<h2 id="获取query参数"><a class="header" href="#获取query参数">获取Query参数</a></h2>
+<pre><code class="language-go">// 匹配users?name=xxx&amp;role=xxx，role可选
+r.GET(&quot;/users&quot;, func(c *gin.Context) {
+	name := c.Query(&quot;name&quot;)
+	role := c.DefaultQuery(&quot;role&quot;, &quot;teacher&quot;)
+	c.String(http.StatusOK, &quot;%s is a %s&quot;, name, role)
+})
+
+/*
+$ curl &quot;http://localhost:9999/users?name=Tom&amp;role=student&quot;
+Tom is a student
+*/
+</code></pre>
+<h2 id="获取post参数"><a class="header" href="#获取post参数">获取POST参数</a></h2>
+<pre><code class="language-go">// POST
+r.POST(&quot;/form&quot;, func(c *gin.Context) {
+	username := c.PostForm(&quot;username&quot;)
+	password := c.DefaultPostForm(&quot;password&quot;, &quot;000000&quot;) // 可设置默认值
+
+	c.JSON(http.StatusOK, gin.H{
+		&quot;username&quot;: username,
+		&quot;password&quot;: password,
+	})
+})
+
+/*
+$ curl http://localhost:9999/form  -X POST -d 'username=geektutu&amp;password=1234'
+{&quot;password&quot;:&quot;1234&quot;,&quot;username&quot;:&quot;geektutu&quot;}
+*/
+</code></pre>
+<h2 id="query和post混合参数"><a class="header" href="#query和post混合参数">Query和POST混合参数</a></h2>
+<pre><code class="language-go">// GET 和 POST 混合
+r.POST(&quot;/posts&quot;, func(c *gin.Context) {
+	id := c.Query(&quot;id&quot;)
+	page := c.DefaultQuery(&quot;page&quot;, &quot;0&quot;)
+	username := c.PostForm(&quot;username&quot;)
+	password := c.DefaultPostForm(&quot;username&quot;, &quot;000000&quot;) // 可设置默认值
+
+	c.JSON(http.StatusOK, gin.H{
+		&quot;id&quot;:       id,
+		&quot;page&quot;:     page,
+		&quot;username&quot;: username,
+		&quot;password&quot;: password,
+	})
+})
+
+/*
+$ curl &quot;http://localhost:9999/posts?id=9876&amp;page=7&quot;  -X POST -d 'username=geektutu&amp;password=1234'
+{&quot;id&quot;:&quot;9876&quot;,&quot;page&quot;:&quot;7&quot;,&quot;password&quot;:&quot;1234&quot;,&quot;username&quot;:&quot;geektutu&quot;}
+*/
+</code></pre>
+<h2 id="map参数字典参数"><a class="header" href="#map参数字典参数">Map参数(字典参数)</a></h2>
+<pre><code class="language-go">r.POST(&quot;/post&quot;, func(c *gin.Context) {
+	ids := c.QueryMap(&quot;ids&quot;)
+	names := c.PostFormMap(&quot;names&quot;)
+
+	c.JSON(http.StatusOK, gin.H{
+		&quot;ids&quot;:   ids,
+		&quot;names&quot;: names,
+	})
+})
+
+/*
+$ curl -g &quot;http://localhost:9999/post?ids[Jack]=001&amp;ids[Tom]=002&quot; -X POST -d 'names[a]=Sam&amp;names[b]=David'
+{&quot;ids&quot;:{&quot;Jack&quot;:&quot;001&quot;,&quot;Tom&quot;:&quot;002&quot;},&quot;names&quot;:{&quot;a&quot;:&quot;Sam&quot;,&quot;b&quot;:&quot;David&quot;}}
+*/
+</code></pre>
+<h2 id="重定向redirect"><a class="header" href="#重定向redirect">重定向(Redirect)</a></h2>
+<pre><code class="language-go">r.GET(&quot;/redirect&quot;, func(c *gin.Context) {
+    c.Redirect(http.StatusMovedPermanently, &quot;/index&quot;)
+})
+
+r.GET(&quot;/goindex&quot;, func(c *gin.Context) {
+	c.Request.URL.Path = &quot;/&quot;
+	r.HandleContext(c)
+})
+
+/*
+$ curl -i http://localhost:9999/redirect
+HTTP/1.1 301 Moved Permanently
+Content-Type: text/html; charset=utf-8
+Location: /
+Date: Thu, 08 Aug 2019 17:22:14 GMT
+Content-Length: 36
+
+&lt;a href=&quot;/&quot;&gt;Moved Permanently&lt;/a&gt;.
+
+$ curl &quot;http://localhost:9999/goindex&quot;
+Who are you?
+*/
+</code></pre>
+<h2 id="分组路由grouping-routes"><a class="header" href="#分组路由grouping-routes">分组路由(Grouping Routes)</a></h2>
+<p>如果有一组路由，前缀都是/api/v1开头，是否每个路由都需要加上/api/v1这个前缀呢？答案是不需要，分组路由可以解决这个问题。利用分组路由还可以更好地实现权限控制，例如将需要登录鉴权的路由放到同一分组中去，简化权限控制。</p>
+<pre><code class="language-go">// group routes 分组路由
+defaultHandler := func(c *gin.Context) {
+	c.JSON(http.StatusOK, gin.H{
+		&quot;path&quot;: c.FullPath(),
+	})
+}
+// group: v1
+v1 := r.Group(&quot;/v1&quot;)
+{
+	v1.GET(&quot;/posts&quot;, defaultHandler)
+	v1.GET(&quot;/series&quot;, defaultHandler)
+}
+// group: v2
+v2 := r.Group(&quot;/v2&quot;)
+{
+	v2.GET(&quot;/posts&quot;, defaultHandler)
+	v2.GET(&quot;/series&quot;, defaultHandler)
 }
 
-
-// main函数中，处理
-http.HandleFunc(&quot;/login&quot;, login)
-</code></pre>
-<pre><code class="language-html">&lt;html&gt;
-&lt;head&gt;
-&lt;title&gt;&lt;/title&gt;
-&lt;/head&gt;
-&lt;body&gt;
-&lt;form action=&quot;/login&quot; method=&quot;post&quot;&gt;
-	用户名:&lt;input type=&quot;text&quot; name=&quot;username&quot;&gt;&lt;br&gt;
-	密码:&lt;input type=&quot;password&quot; name=&quot;password&quot;&gt;&lt;br&gt;
-	&lt;input type=&quot;submit&quot; value=&quot;登录&quot;&gt;
-&lt;/form&gt;
-&lt;/body&gt;
-&lt;script src=&quot;./test.js&quot;&gt;&lt;/script&gt;
-&lt;/html&gt;
+/*
+$ curl http://localhost:9999/v1/posts
+{&quot;path&quot;:&quot;/v1/posts&quot;}
+$ curl http://localhost:9999/v2/posts
+{&quot;path&quot;:&quot;/v2/posts&quot;}
+*/
 </code></pre>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
-                            <a rel="prev" href="../../Vue/project/day06_vue前端工程化.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                            <a rel="prev" href="../../Go/gin/start.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <i class="fa fa-angle-left"></i>
-                            </a>
-                            <a rel="next" href="../../Go/gin/start.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
-                                <i class="fa fa-angle-right"></i>
                             </a>
                         <div style="clear: both"></div>
                     </nav>
@@ -237,11 +309,8 @@ http.HandleFunc(&quot;/login&quot;, login)
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
-                    <a rel="prev" href="../../Vue/project/day06_vue前端工程化.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                    <a rel="prev" href="../../Go/gin/start.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
-                    </a>
-                    <a rel="next" href="../../Go/gin/start.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
-                        <i class="fa fa-angle-right"></i>
                     </a>
             </nav>
 
