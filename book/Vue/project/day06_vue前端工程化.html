@@ -612,22 +612,24 @@ module.exports = {
 &lt;/style&gt;
 </code></pre>
 <p>补充：安装Vetur插件可以使得.vue文件中的代码高亮</p>
-<p>配置.vue文件的加载器
-A.安装vue组件的加载器
-npm install vue-loader vue-template-compiler -D
-B.配置规则：更改webpack.config.js的module中的rules数组
-const VueLoaderPlugin = require(&quot;vue-loader/lib/plugin&quot;);
+<p>配置.vue文件的加载器<br />
+A.安装vue组件的加载器</p>
+<pre><code>npm install vue-loader vue-template-compiler -D
+</code></pre>
+<p>B.配置规则：更改webpack.config.js的module中的rules数组</p>
+<pre><code>const VueLoaderPlugin = require(&quot;vue-loader/lib/plugin&quot;);
 const vuePlugin = new VueLoaderPlugin();
 module.exports = {
-......
-plugins:[ htmlPlugin, vuePlugin  ],
-module : {
-rules:[
-...//其他规则
-{ 
-test:/.vue$/,
-loader:&quot;vue-loader&quot;,</p>
-<pre><code>            }
+    ......
+    plugins:[ htmlPlugin, vuePlugin  ],
+    module : {
+        rules:[
+            ...//其他规则
+            { 
+                test:/\.vue$/,
+                loader:&quot;vue-loader&quot;,
+                
+            }
         ]
     }
 }
@@ -635,45 +637,50 @@ loader:&quot;vue-loader&quot;,</p>
 <h1 id="13在webpack中使用vue"><a class="header" href="#13在webpack中使用vue">13.在webpack中使用vue</a></h1>
 <p>上一节我们安装处理了vue单文件组件的加载器，想要让vue单文件组件能够使用，我们必须要安装vue
 并使用vue来引用vue单文件组件。
-A.安装Vue
-npm install vue -S
-B.在index.js中引入vue：import Vue from &quot;vue&quot;
-C.创建Vue实例对象并指定el，最后使用render函数渲染单文件组件
-const vm = new Vue({
-el:&quot;#first&quot;,
-render:h=&gt;h(app)
-})</p>
+A.安装Vue</p>
+<pre><code>npm install vue -S
+</code></pre>
+<p>B.在index.js中引入vue：import Vue from &quot;vue&quot;<br />
+C.创建Vue实例对象并指定el，最后使用render函数渲染单文件组件</p>
+<pre><code>const vm = new Vue({
+    el:&quot;#first&quot;,
+    render:h=&gt;h(app)
+})
+</code></pre>
 <h1 id="14使用webpack打包发布项目"><a class="header" href="#14使用webpack打包发布项目">14.使用webpack打包发布项目</a></h1>
 <p>在项目上线之前，我们需要将整个项目打包并发布。
-A.配置package.json
-&quot;scripts&quot;:{
-&quot;dev&quot;:&quot;webpack-dev-server&quot;,
-&quot;build&quot;:&quot;webpack -p&quot;
+A.配置package.json</p>
+<pre><code>&quot;scripts&quot;:{
+    &quot;dev&quot;:&quot;webpack-dev-server&quot;,
+    &quot;build&quot;:&quot;webpack -p&quot;
 }
-B.在项目打包之前，可以将dist目录删除，生成全新的dist目录</p>
+</code></pre>
+<p>B.在项目打包之前，可以将dist目录删除，生成全新的dist目录</p>
 <h1 id="15vue脚手架"><a class="header" href="#15vue脚手架">15.Vue脚手架</a></h1>
-<p>Vue脚手架可以快速生成Vue项目基础的架构。
-A.安装3.x版本的Vue脚手架：
-npm install -g @vue/cli
-B.基于3.x版本的脚手架创建Vue项目：
-1).使用命令创建Vue项目
-命令：vue create my-project
-选择Manually select features(选择特性以创建项目)
-勾选特性可以用空格进行勾选。
-是否选用历史模式的路由：n
-ESLint选择：ESLint + Standard config
-何时进行ESLint语法校验：Lint on save
-babel，postcss等配置文件如何放置：In dedicated config files(单独使用文件进行配置)
-是否保存为模板：n
-使用哪个工具安装包：npm
+<p>Vue脚手架可以快速生成Vue项目基础的架构。<br />
+A.安装3.x版本的Vue脚手架：</p>
+<pre><code>npm install -g @vue/cli
+</code></pre>
+<p>B.基于3.x版本的脚手架创建Vue项目：</p>
+<pre><code>1).使用命令创建Vue项目
+    命令：vue create my-project
+    选择Manually select features(选择特性以创建项目)
+    勾选特性可以用空格进行勾选。
+    是否选用历史模式的路由：n
+    ESLint选择：ESLint + Standard config
+    何时进行ESLint语法校验：Lint on save
+    babel，postcss等配置文件如何放置：In dedicated config files(单独使用文件进行配置)
+    是否保存为模板：n
+    使用哪个工具安装包：npm
 2).基于ui界面创建Vue项目
-命令：vue ui
-在自动打开的创建项目网页中配置项目信息。
+    命令：vue ui
+    在自动打开的创建项目网页中配置项目信息。
 3).基于2.x的旧模板，创建Vue项目
-npm install -g @vue/cli-init
-vue init webpack my-project</p>
-<p>C.分析Vue脚手架生成的项目结构
-node_modules:依赖包目录
+    npm install -g @vue/cli-init
+    vue init webpack my-project
+</code></pre>
+<p>C.分析Vue脚手架生成的项目结构</p>
+<pre><code>node_modules:依赖包目录
 public：静态资源目录
 src：源码目录
 src/assets:资源目录
@@ -683,7 +690,8 @@ src/App.vue:根组件
 src/main.js:入口js
 src/router.js:路由js
 babel.config.js:babel配置文件
-.eslintrc.js:</p>
+.eslintrc.js:
+</code></pre>
 <h1 id="16vue脚手架的自定义配置"><a class="header" href="#16vue脚手架的自定义配置">16.Vue脚手架的自定义配置</a></h1>
 <pre><code>A.通过 package.json 进行配置 [不推荐使用]
     &quot;vue&quot;:{
@@ -701,14 +709,16 @@ B.通过单独的配置文件进行配置，创建vue.config.js
     }
 </code></pre>
 <h1 id="17element-ui的基本使用"><a class="header" href="#17element-ui的基本使用">17.Element-UI的基本使用</a></h1>
-<p>Element-UI:一套基于2.0的桌面端组件库
-官网地址：http://element-cn.eleme.io/#/zh-CN
-A.安装：
-npm install element-ui -S
-B.导入使用：
-import ElementUI from &quot;element-ui&quot;;
-import &quot;element-ui/lib/theme-chalk/index.css&quot;;</p>
-<pre><code>Vue.use(ElementUI)
+<p>Element-UI:一套基于2.0的桌面端组件库<br />
+官网地址：http://element-cn.eleme.io/#/zh-CN<br />
+A.安装：</p>
+<pre><code>npm install element-ui -S
+</code></pre>
+<p>B.导入使用：</p>
+<pre><code>import ElementUI from &quot;element-ui&quot;;
+import &quot;element-ui/lib/theme-chalk/index.css&quot;;
+
+Vue.use(ElementUI)
 </code></pre>
 
                     </main>
@@ -737,20 +747,6 @@ import &quot;element-ui/lib/theme-chalk/index.css&quot;;</p>
 
         </div>
 
-        <!-- Livereload script (if served using the cli tool) -->
-        <script type="text/javascript">
-            var socket = new WebSocket("ws://localhost:3000/__livereload");
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
         <script type="text/javascript">
             window.playground_copyable = true;
         </script>
