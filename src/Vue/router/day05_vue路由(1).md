@@ -197,19 +197,27 @@ Vue Router的特性：
 支持路由滚动行为
 
 # 4.Vue Router的使用步骤(★★★)
+
 A.导入js文件
 <script src="lib/vue_2.5.22.js"></script>
 <script src="lib/vue-router_3.0.2.js"></script>
-B.添加路由链接:<router-link>是路由中提供的标签，默认会被渲染为a标签，to属性默认被渲染为href属性，
+B.添加路由链接: <router-link>是路由中提供的标签，默认会被渲染为a标签，to属性默认被渲染为href属性，
 to属性的值会被渲染为#开头的hash地址
+```
 <router-link to="/user">User</router-link>
 <router-link to="/login">Login</router-link>
+```
 C.添加路由填充位（路由占位符）
+```
 <router-view></router-view>
+```
 D.定义路由组件
+```
 var User = { template:"<div>This is User</div>" }
 var Login = { template:"<div>This is Login</div>" }
+```
 E.配置路由规则并创建路由实例
+```
 var myRouter = new VueRouter({
     //routes是路由规则数组
     routes:[
@@ -219,25 +227,28 @@ var myRouter = new VueRouter({
         {path:"/login",component:Login}
     ]
 })
+```
 F.将路由挂载到Vue实例中
+```
 new Vue({
     el:"#app",
     //通过router属性挂载路由对象
     router:myRouter
 })
-
+```
 小结：
-Vue Router的使用步骤还是比较清晰的，按照步骤一步一步就能完成路由操作
-A.导入js文件
-B.添加路由链接
-C.添加路由占位符(最后路由展示的组件就会在占位符的位置显示)
-D.定义路由组件
-E.配置路由规则并创建路由实例
-F.将路由挂载到Vue实例中
+Vue Router的使用步骤还是比较清晰的，按照步骤一步一步就能完成路由操作  
+A.导入js文件  
+B.添加路由链接  
+C.添加路由占位符(最后路由展示的组件就会在占位符的位置显示)  
+D.定义路由组件  
+E.配置路由规则并创建路由实例  
+F.将路由挂载到Vue实例中  
 
-补充：
+补充：  
 路由重定向：可以通过路由重定向为页面设置默认展示的组件
 在路由规则中添加一条路由规则即可，如下：
+```
 var myRouter = new VueRouter({
     //routes是路由规则数组
     routes: [
@@ -247,6 +258,7 @@ var myRouter = new VueRouter({
         { path: "/login", component: Login }
     ]
 })
+```
 
 # 5.嵌套路由，动态路由的实现方式
 ## A.嵌套路由的概念(★★★)
@@ -254,9 +266,9 @@ var myRouter = new VueRouter({
 
 嵌套路由最关键的代码在于理解子级路由的概念：
 比如我们有一个/login的路由
-那么/login下面还可以添加子级路由，如:
-/login/account
-/login/phone
+那么/login下面还可以添加子级路由，如:  
+/login/account  
+/login/phone  
 
 参考代码如下：
 ```
@@ -305,6 +317,7 @@ var User = { template: "<div>This is User</div>" }
 
 ## B.动态路由匹配(★★★)
 
+```
 var User = { template:"<div>用户：{{$route.params.id}}</div>"}
 
 var myRouter = new VueRouter({
@@ -315,10 +328,12 @@ var myRouter = new VueRouter({
         
     ]
 })
+```
 
 补充：
-如果使用$route.params.id来获取路径传参的数据不够灵活。
+如果使用$route.params.id来获取路径传参的数据不够灵活。  
 1.我们可以通过props来接收参数
+```
 var User = { 
     props:["id"],
     template:"<div>用户：{{id}}</div>"
@@ -333,9 +348,10 @@ var myRouter = new VueRouter({
         
     ]
 })
+```
 
-2.还有一种情况，我们可以将props设置为对象，那么就直接将对象的数据传递给
-组件进行使用
+2.还有一种情况，我们可以将props设置为对象，那么就直接将对象的数据传递给组件进行使用
+```
 var User = { 
     props:["username","pwd"],
     template:"<div>用户：{{username}}---{{pwd}}</div>"
@@ -350,9 +366,11 @@ var myRouter = new VueRouter({
         
     ]
 })
+```
 
 3.如果想要获取传递的参数值还想要获取传递的对象数据，那么props应该设置为
 函数形式。
+```
 var User = { 
     props:["username","pwd","id"],
     template:"<div>用户：{{id}} -> {{username}}---{{pwd}}</div>"
@@ -372,12 +390,12 @@ var myRouter = new VueRouter({
         
     ]
 })
-
+```
 
 # 7.命名路由以及编程式导航
 ## A.命名路由：给路由取别名
 案例：
-
+```
 var myRouter = new VueRouter({
     //routes是路由规则数组
     routes: [
@@ -393,21 +411,24 @@ var myRouter = new VueRouter({
 
 //还可以编程式导航
 myRouter.push( { name:'user' , params: {id:123} } )
+```
 
 ## B.编程式导航(★★★)
-页面导航的两种方式：
-A.声明式导航：通过点击链接的方式实现的导航
+页面导航的两种方式：  
+A.声明式导航：通过点击链接的方式实现的导航  
 B.编程式导航：调用js的api方法实现导航
 
-Vue-Router中常见的导航方式：
-this.$router.push("hash地址");
-this.$router.push("/login");
-this.$router.push({ name:'user' , params: {id:123} });
-this.$router.push({ path:"/login" });
-this.$router.push({ path:"/login",query:{username:"jack"} });
+Vue-Router中常见的导航方式：  
+```
+this.$router.push("hash地址");  
+this.$router.push("/login");  
+this.$router.push({ name:'user' , params: {id:123} });  
+this.$router.push({ path:"/login" });  
+this.$router.push({ path:"/login",query:  {username:"jack"} });  
 
 this.$router.go( n );//n为数字，参考history.go
 this.$router.go( -1 );
+```
 
 # 8.实现后台管理案例(★★★)
 
@@ -419,14 +440,12 @@ this.$router.go( -1 );
 
 其中"用户管理"组件展示的效果如上图所示，在用户管理区域中的详情链接也是可以点击的，点击之后将会显示用户详情信息。
 
-案例思路：
-1).先将素材文件夹中的11.基于vue-router的案例.html复制到我们自己的文件夹中。
-看一下这个文件中的代码编写了一些什么内容，
-这个页面已经把后台管理页面的基本布局实现了
-2).在页面中引入vue，vue-router
-3).创建Vue实例对象，准备开始编写代码实现功能
-4).希望是通过组件的形式展示页面的主体内容，而不是写死页面结构，所以我们可以定义一个根组件：
-
+案例思路：  
+1).先将素材文件夹中的11.基于vue-router的案例.html复制到我们自己的文件夹中。看一下这个文件中的代码编写了一些什么内容，
+这个页面已经把后台管理页面的基本布局实现了  
+2).在页面中引入vue，vue-router  
+3).创建Vue实例对象，准备开始编写代码实现功能  
+4).希望是通过组件的形式展示页面的主体内容，而不是写死页面结构，所以我们可以定义一个根组件：  
 ```
 //只需要把原本页面中的html代码设置为组件中的模板内容即可
 const app = {
@@ -510,7 +529,9 @@ const app = {
       </div>`
   }
 ```
+
 然后，我们要为子级路由创建并设置需要显示的子级组件
+
 ```
 //建议创建的组件首字母大写，和其他内容区分
 const Users = {template:`<div>
@@ -551,44 +572,50 @@ const vm = new Vue({
 ```
 
 7).展示用户信息列表：
-    A.为Users组件添加私有数据,并在模板中循环展示私有数据
-    ​```
-    const Users = {
-    data(){
-        return {
-            userList:[
-                {id:1,name:"zs",age:18},
-                {id:2,name:"ls",age:19},
-                {id:3,name:"wang",age:20},
-                {id:4,name:"jack",age:21},
-            ]
-        }
-    },
-    template:`<div>
-        <h3>用户管理</h3>
-        <table>
-            <thead>
-                <tr>
-                    <th>编号</th>
-                    <th>姓名</th>
-                    <th>年龄</th>
-                    <th>操作</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr :key="item.id" v-for="item in userList">
-                    <td>{{item.id}}</td>
-                    <td>{{item.name}}</td>
-                    <td>{{item.age}}</td>
-                    <td><a href="javascript:;">详情</a></td>
-                </tr>
-            </tbody>
-        </table>
-    </div>`}
-    ​```
+
+A.为Users组件添加私有数据,并在模板中循环展示私有数据
+
+```
+const Users = {
+data(){
+    return {
+        userList:[
+            {id:1,name:"zs",age:18},
+            {id:2,name:"ls",age:19},
+            {id:3,name:"wang",age:20},
+            {id:4,name:"jack",age:21},
+        ]
+    }
+},
+template:<div>
+    <h3>用户管理</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>编号</th>
+                <th>姓名</th>
+                <th>年龄</th>
+                <th>操作</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr :key="item.id" v-for="item in userList">
+                <td>{{item.id}}</td>
+                <td>{{item.name}}</td>
+                <td>{{item.age}}</td>
+                <td><a href="javascript:;">详情</a></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+}
+
+
+
 
 8.当用户列表展示完毕之后，我们可以点击列表中的详情来显示用户详情信息，首先我们需要创建一个组件，用来展示详情信息
-```
+
+
 const UserInfo = {
     props:["id"],
     template:`<div>
@@ -604,7 +631,9 @@ const UserInfo = {
     }
   }
 ```
+
 然后我们需要设置这个组件的路由规则
+
 ```
 const myRouter = new VueRouter({
     routes:[

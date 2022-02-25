@@ -459,10 +459,13 @@ webpack提供了模块化支持，代码压缩混淆，解决js兼容问题，�
 
 补充：安装Vetur插件可以使得.vue文件中的代码高亮
 
-配置.vue文件的加载器
-A.安装vue组件的加载器
+配置.vue文件的加载器  
+A.安装vue组件的加载器  
+
     npm install vue-loader vue-template-compiler -D
-B.配置规则：更改webpack.config.js的module中的rules数组
+
+B.配置规则：更改webpack.config.js的module中的rules数组  
+
     const VueLoaderPlugin = require("vue-loader/lib/plugin");
     const vuePlugin = new VueLoaderPlugin();
     module.exports = {
@@ -483,10 +486,13 @@ B.配置规则：更改webpack.config.js的module中的rules数组
 # 13.在webpack中使用vue
 上一节我们安装处理了vue单文件组件的加载器，想要让vue单文件组件能够使用，我们必须要安装vue
 并使用vue来引用vue单文件组件。
-A.安装Vue
+A.安装Vue  
+
     npm install vue -S
-B.在index.js中引入vue：import Vue from "vue"
+
+B.在index.js中引入vue：import Vue from "vue"  
 C.创建Vue实例对象并指定el，最后使用render函数渲染单文件组件
+
     const vm = new Vue({
         el:"#first",
         render:h=>h(app)
@@ -495,17 +501,22 @@ C.创建Vue实例对象并指定el，最后使用render函数渲染单文件组�
 # 14.使用webpack打包发布项目
 在项目上线之前，我们需要将整个项目打包并发布。
 A.配置package.json
+
     "scripts":{
         "dev":"webpack-dev-server",
         "build":"webpack -p"
     }
+
 B.在项目打包之前，可以将dist目录删除，生成全新的dist目录
 
 # 15.Vue脚手架
-Vue脚手架可以快速生成Vue项目基础的架构。
+Vue脚手架可以快速生成Vue项目基础的架构。  
 A.安装3.x版本的Vue脚手架：
+
     npm install -g @vue/cli
+
 B.基于3.x版本的脚手架创建Vue项目：
+
     1).使用命令创建Vue项目
         命令：vue create my-project
         选择Manually select features(选择特性以创建项目)
@@ -524,6 +535,7 @@ B.基于3.x版本的脚手架创建Vue项目：
         vue init webpack my-project
 
 C.分析Vue脚手架生成的项目结构
+
     node_modules:依赖包目录
     public：静态资源目录
     src：源码目录
@@ -537,6 +549,7 @@ C.分析Vue脚手架生成的项目结构
     .eslintrc.js:
 
 # 16.Vue脚手架的自定义配置
+
     A.通过 package.json 进行配置 [不推荐使用]
         "vue":{
             "devServer":{
@@ -554,11 +567,15 @@ C.分析Vue脚手架生成的项目结构
 
 
 # 17.Element-UI的基本使用
-Element-UI:一套基于2.0的桌面端组件库
-官网地址：http://element-cn.eleme.io/#/zh-CN
+
+Element-UI:一套基于2.0的桌面端组件库  
+官网地址：http://element-cn.eleme.io/#/zh-CN  
 A.安装：
+
     npm install element-ui -S
+
 B.导入使用：
+
     import ElementUI from "element-ui";
     import "element-ui/lib/theme-chalk/index.css";
     
