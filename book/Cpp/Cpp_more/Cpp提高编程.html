@@ -75,7 +75,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item affix "><a href="../../index.html">介绍</a></li><li class="chapter-item affix "><li class="part-title">Git笔记</li><li class="chapter-item "><a href="../../Git/git.html"><strong aria-hidden="true">1.</strong> Git的操作</a></li><li class="chapter-item "><a href="../../Github/github-cli.html"><strong aria-hidden="true">2.</strong> Github-Cli的操作</a></li><li class="chapter-item affix "><li class="part-title">C++笔记</li><li class="chapter-item "><a href="../../Cpp/Cpp_base/Cpp基础入门.html"><strong aria-hidden="true">3.</strong> Cpp基础</a></li><li class="chapter-item "><a href="../../Cpp/Cpp_core/Cpp核心编程.html"><strong aria-hidden="true">4.</strong> Cpp核心</a></li><li class="chapter-item expanded "><a href="../../Cpp/Cpp_more/Cpp提高编程.html" class="active"><strong aria-hidden="true">5.</strong> Cpp提高</a></li><li class="chapter-item affix "><li class="part-title">Redis笔记</li><li class="chapter-item "><a href="../../Redis/redis.html"><strong aria-hidden="true">6.</strong> Redis的操作</a></li><li class="chapter-item affix "><li class="part-title">Vue笔记</li><li class="chapter-item "><a href="../../Vue/basis/note.html"><strong aria-hidden="true">7.</strong> Vue基础</a></li><li class="chapter-item "><a href="../../Vue/router/day05_vue路由(1).html"><strong aria-hidden="true">8.</strong> Vue路由</a></li><li class="chapter-item "><a href="../../Vue/project/day06_vue前端工程化.html"><strong aria-hidden="true">9.</strong> Vue框架</a></li><li class="chapter-item affix "><li class="part-title">Go笔记</li><li class="chapter-item "><a href="../../Go/Web/goweb_base.html"><strong aria-hidden="true">10.</strong> GO WEB 基础</a></li><li class="chapter-item affix "><li class="part-title">Gin框架</li><li class="chapter-item "><a href="../../Go/gin/start.html"><strong aria-hidden="true">11.</strong> Gin入门</a></li><li class="chapter-item "><a href="../../Go/gin/router.html"><strong aria-hidden="true">12.</strong> 路由</a></li><li class="chapter-item "><div><strong aria-hidden="true">13.</strong> 上传文件</div></li><li class="chapter-item "><div><strong aria-hidden="true">14.</strong> HTML模板(Template)</div></li><li class="chapter-item "><div><strong aria-hidden="true">15.</strong> 中间件(Middleware)</div></li><li class="chapter-item "><div><strong aria-hidden="true">16.</strong> 热加载调试 Hot Reload</div></li></ol>
+                <ol class="chapter"><li class="chapter-item affix "><a href="../../index.html">介绍</a></li><li class="chapter-item affix "><li class="part-title">Git笔记</li><li class="chapter-item "><a href="../../Git/git.html"><strong aria-hidden="true">1.</strong> Git的操作</a></li><li class="chapter-item "><a href="../../Github/github-cli.html"><strong aria-hidden="true">2.</strong> Github-Cli的操作</a></li><li class="chapter-item affix "><li class="part-title">C++笔记</li><li class="chapter-item "><a href="../../Cpp/Cpp_base/Cpp基础入门.html"><strong aria-hidden="true">3.</strong> Cpp基础</a></li><li class="chapter-item "><a href="../../Cpp/Cpp_core/Cpp核心编程.html"><strong aria-hidden="true">4.</strong> Cpp核心</a></li><li class="chapter-item expanded "><a href="../../Cpp/Cpp_more/Cpp提高编程.html" class="active"><strong aria-hidden="true">5.</strong> Cpp提高</a></li><li class="chapter-item affix "><li class="part-title">Redis笔记</li><li class="chapter-item "><a href="../../Redis/redis.html"><strong aria-hidden="true">6.</strong> Redis的操作</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -1573,13 +1573,14 @@ int main() {
 <p>每个容器都有自己专属的迭代器</p>
 <p>迭代器使用非常类似于指针，初学阶段我们可以先理解迭代器为指针</p>
 <p>迭代器种类：</p>
-<table><thead><tr><th>种类</th><th>功能</th><th>支持运算</th></tr></thead><tbody>
+<div class="table-wrapper"><table><thead><tr><th>种类</th><th>功能</th><th>支持运算</th></tr></thead><tbody>
 <tr><td>输入迭代器</td><td>对数据的只读访问</td><td>只读，支持++、==、！=</td></tr>
 <tr><td>输出迭代器</td><td>对数据的只写访问</td><td>只写，支持++</td></tr>
 <tr><td>前向迭代器</td><td>读写操作，并能向前推进迭代器</td><td>读写，支持++、==、！=</td></tr>
 <tr><td>双向迭代器</td><td>读写操作，并能向前和向后操作</td><td>读写，支持++、--，</td></tr>
 <tr><td>随机访问迭代器</td><td>读写操作，可以以跳跃的方式访问任意数据，功能最强的迭代器</td><td>读写，支持++、--、[n]、-n、&lt;、&lt;=、&gt;、&gt;=</td></tr>
 </tbody></table>
+</div>
 <p>常用的容器中迭代器种类为双向迭代器，和随机访问迭代器</p>
 <h3 id="25-容器算法迭代器初识"><a class="header" href="#25-容器算法迭代器初识">2.5 容器算法迭代器初识</a></h3>
 <p>了解STL中容器、算法、迭代器概念之后，我们利用代码感受STL的魅力</p>
@@ -6716,6 +6717,22 @@ int main() {
 
         </div>
 
+        <!-- Livereload script (if served using the cli tool) -->
+        <script type="text/javascript">
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
         <script type="text/javascript">
             window.playground_copyable = true;
         </script>

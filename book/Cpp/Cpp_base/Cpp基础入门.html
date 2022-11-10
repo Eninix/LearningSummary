@@ -75,7 +75,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item affix "><a href="../../index.html">介绍</a></li><li class="chapter-item affix "><li class="part-title">Git笔记</li><li class="chapter-item "><a href="../../Git/git.html"><strong aria-hidden="true">1.</strong> Git的操作</a></li><li class="chapter-item "><a href="../../Github/github-cli.html"><strong aria-hidden="true">2.</strong> Github-Cli的操作</a></li><li class="chapter-item affix "><li class="part-title">C++笔记</li><li class="chapter-item expanded "><a href="../../Cpp/Cpp_base/Cpp基础入门.html" class="active"><strong aria-hidden="true">3.</strong> Cpp基础</a></li><li class="chapter-item "><a href="../../Cpp/Cpp_core/Cpp核心编程.html"><strong aria-hidden="true">4.</strong> Cpp核心</a></li><li class="chapter-item "><a href="../../Cpp/Cpp_more/Cpp提高编程.html"><strong aria-hidden="true">5.</strong> Cpp提高</a></li><li class="chapter-item affix "><li class="part-title">Redis笔记</li><li class="chapter-item "><a href="../../Redis/redis.html"><strong aria-hidden="true">6.</strong> Redis的操作</a></li><li class="chapter-item affix "><li class="part-title">Vue笔记</li><li class="chapter-item "><a href="../../Vue/basis/note.html"><strong aria-hidden="true">7.</strong> Vue基础</a></li><li class="chapter-item "><a href="../../Vue/router/day05_vue路由(1).html"><strong aria-hidden="true">8.</strong> Vue路由</a></li><li class="chapter-item "><a href="../../Vue/project/day06_vue前端工程化.html"><strong aria-hidden="true">9.</strong> Vue框架</a></li><li class="chapter-item affix "><li class="part-title">Go笔记</li><li class="chapter-item "><a href="../../Go/Web/goweb_base.html"><strong aria-hidden="true">10.</strong> GO WEB 基础</a></li><li class="chapter-item affix "><li class="part-title">Gin框架</li><li class="chapter-item "><a href="../../Go/gin/start.html"><strong aria-hidden="true">11.</strong> Gin入门</a></li><li class="chapter-item "><a href="../../Go/gin/router.html"><strong aria-hidden="true">12.</strong> 路由</a></li><li class="chapter-item "><div><strong aria-hidden="true">13.</strong> 上传文件</div></li><li class="chapter-item "><div><strong aria-hidden="true">14.</strong> HTML模板(Template)</div></li><li class="chapter-item "><div><strong aria-hidden="true">15.</strong> 中间件(Middleware)</div></li><li class="chapter-item "><div><strong aria-hidden="true">16.</strong> 热加载调试 Hot Reload</div></li></ol>
+                <ol class="chapter"><li class="chapter-item affix "><a href="../../index.html">介绍</a></li><li class="chapter-item affix "><li class="part-title">Git笔记</li><li class="chapter-item "><a href="../../Git/git.html"><strong aria-hidden="true">1.</strong> Git的操作</a></li><li class="chapter-item "><a href="../../Github/github-cli.html"><strong aria-hidden="true">2.</strong> Github-Cli的操作</a></li><li class="chapter-item affix "><li class="part-title">C++笔记</li><li class="chapter-item expanded "><a href="../../Cpp/Cpp_base/Cpp基础入门.html" class="active"><strong aria-hidden="true">3.</strong> Cpp基础</a></li><li class="chapter-item "><a href="../../Cpp/Cpp_core/Cpp核心编程.html"><strong aria-hidden="true">4.</strong> Cpp核心</a></li><li class="chapter-item "><a href="../../Cpp/Cpp_more/Cpp提高编程.html"><strong aria-hidden="true">5.</strong> Cpp提高</a></li><li class="chapter-item affix "><li class="part-title">Redis笔记</li><li class="chapter-item "><a href="../../Redis/redis.html"><strong aria-hidden="true">6.</strong> Redis的操作</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -384,7 +384,7 @@ int main() {
 <li><strong>在定义变量或者常量时候，不要用关键字</strong></li>
 </ul>
 <p>C++关键字如下：</p>
-<table><thead><tr><th>asm</th><th>do</th><th>if</th><th>return</th><th>typedef</th></tr></thead><tbody>
+<div class="table-wrapper"><table><thead><tr><th>asm</th><th>do</th><th>if</th><th>return</th><th>typedef</th></tr></thead><tbody>
 <tr><td>auto</td><td>double</td><td>inline</td><td>short</td><td>typeid</td></tr>
 <tr><td>bool</td><td>dynamic_cast</td><td>int</td><td>signed</td><td>typename</td></tr>
 <tr><td>break</td><td>else</td><td>long</td><td>sizeof</td><td>union</td></tr>
@@ -398,6 +398,7 @@ int main() {
 <tr><td>default</td><td>friend</td><td>register</td><td>true</td><td></td></tr>
 <tr><td>delete</td><td>goto</td><td>reinterpret_cast</td><td>try</td><td></td></tr>
 </tbody></table>
+</div>
 <p><code>提示：在给变量或者常量起名称时候，不要用C++得关键字，否则会产生歧义。</code></p>
 <h3 id="16-标识符命名规则"><a class="header" href="#16-标识符命名规则">1.6 标识符命名规则</a></h3>
 <p><strong>作用</strong>：C++规定给标识符（变量、常量）命名时，有一套自己的规则</p>
@@ -415,12 +416,13 @@ int main() {
 <h3 id="21-整型"><a class="header" href="#21-整型">2.1 整型</a></h3>
 <p><strong>作用</strong>：整型变量表示的是==整数类型==的数据</p>
 <p>C++中能够表示整型的类型有以下几种方式，<strong>区别在于所占内存空间不同</strong>：</p>
-<table><thead><tr><th><strong>数据类型</strong></th><th><strong>占用空间</strong></th><th>取值范围</th></tr></thead><tbody>
+<div class="table-wrapper"><table><thead><tr><th><strong>数据类型</strong></th><th><strong>占用空间</strong></th><th>取值范围</th></tr></thead><tbody>
 <tr><td>short(短整型)</td><td>2字节</td><td>(-2^15 ~ 2^15-1)</td></tr>
 <tr><td>int(整型)</td><td>4字节</td><td>(-2^31 ~ 2^31-1)</td></tr>
 <tr><td>long(长整形)</td><td>Windows为4字节，Linux为4字节(32位)，8字节(64位)</td><td>(-2^31 ~ 2^31-1)</td></tr>
 <tr><td>long long(长长整形)</td><td>8字节</td><td>(-2^63 ~ 2^63-1)</td></tr>
 </tbody></table>
+</div>
 <h3 id="22-sizeof关键字"><a class="header" href="#22-sizeof关键字">2.2 sizeof关键字</a></h3>
 <p>**作用：**利用sizeof关键字可以==统计数据类型所占内存大小==</p>
 <p><strong>语法：</strong> <code>sizeof( 数据类型 / 变量)</code></p>
@@ -451,10 +453,11 @@ int main() {
 <li>双精度double</li>
 </ol>
 <p>两者的<strong>区别</strong>在于表示的有效数字范围不同。</p>
-<table><thead><tr><th><strong>数据类型</strong></th><th><strong>占用空间</strong></th><th><strong>有效数字范围</strong></th></tr></thead><tbody>
+<div class="table-wrapper"><table><thead><tr><th><strong>数据类型</strong></th><th><strong>占用空间</strong></th><th><strong>有效数字范围</strong></th></tr></thead><tbody>
 <tr><td>float</td><td>4字节</td><td>7位有效数字</td></tr>
 <tr><td>double</td><td>8字节</td><td>15～16位有效数字</td></tr>
 </tbody></table>
+</div>
 <p><strong>示例：</strong></p>
 <pre><code class="language-C++">int main() {
 
@@ -512,7 +515,7 @@ int main() {
 }
 </code></pre>
 <p>ASCII码表格：</p>
-<table><thead><tr><th><strong>ASCII</strong>值</th><th><strong>控制字符</strong></th><th><strong>ASCII</strong>值</th><th><strong>字符</strong></th><th><strong>ASCII</strong>值</th><th><strong>字符</strong></th><th><strong>ASCII</strong>值</th><th><strong>字符</strong></th></tr></thead><tbody>
+<div class="table-wrapper"><table><thead><tr><th><strong>ASCII</strong>值</th><th><strong>控制字符</strong></th><th><strong>ASCII</strong>值</th><th><strong>字符</strong></th><th><strong>ASCII</strong>值</th><th><strong>字符</strong></th><th><strong>ASCII</strong>值</th><th><strong>字符</strong></th></tr></thead><tbody>
 <tr><td>0</td><td>NUT</td><td>32</td><td>(space)</td><td>64</td><td>@</td><td>96</td><td>、</td></tr>
 <tr><td>1</td><td>SOH</td><td>33</td><td>!</td><td>65</td><td>A</td><td>97</td><td>a</td></tr>
 <tr><td>2</td><td>STX</td><td>34</td><td>&quot;</td><td>66</td><td>B</td><td>98</td><td>b</td></tr>
@@ -546,6 +549,7 @@ int main() {
 <tr><td>30</td><td>RS</td><td>62</td><td>&gt;</td><td>94</td><td>^</td><td>126</td><td>`</td></tr>
 <tr><td>31</td><td>US</td><td>63</td><td>?</td><td>95</td><td>_</td><td>127</td><td>DEL</td></tr>
 </tbody></table>
+</div>
 <p>ASCII 码大致由以下<strong>两部分组</strong>成：</p>
 <ul>
 <li>ASCII 非打印控制字符： ASCII 表上的数字 <strong>0-31</strong> 分配给了控制字符，用于控制像打印机等一些外围设备。</li>
@@ -554,7 +558,7 @@ int main() {
 <h3 id="25-转义字符"><a class="header" href="#25-转义字符">2.5 转义字符</a></h3>
 <p>**作用：**用于表示一些==不能显示出来的ASCII字符==</p>
 <p>现阶段我们常用的转义字符有：<code> \n  \\  \t</code></p>
-<table><thead><tr><th><strong>转义字符</strong></th><th><strong>含义</strong></th><th><strong>ASCII</strong>码值（十进制）</th></tr></thead><tbody>
+<div class="table-wrapper"><table><thead><tr><th><strong>转义字符</strong></th><th><strong>含义</strong></th><th><strong>ASCII</strong>码值（十进制）</th></tr></thead><tbody>
 <tr><td>\a</td><td>警报</td><td>007</td></tr>
 <tr><td>\b</td><td>退格(BS) ，将当前位置移到前一列</td><td>008</td></tr>
 <tr><td>\f</td><td>换页(FF)，将当前位置移到下页开头</td><td>012</td></tr>
@@ -570,6 +574,7 @@ int main() {
 <tr><td>\ddd</td><td>8进制转义字符，d范围0~7</td><td>3位8进制</td></tr>
 <tr><td>\xhh</td><td>16进制转义字符，h范围0~9，a~f，A~F</td><td>3位16进制</td></tr>
 </tbody></table>
+</div>
 <p>示例：</p>
 <pre><code class="language-C++">int main() {
 	
@@ -692,16 +697,17 @@ int main() {
 <h2 id="3-运算符"><a class="header" href="#3-运算符">3 运算符</a></h2>
 <p>**作用：**用于执行代码的运算</p>
 <p>本章我们主要讲解以下几类运算符：</p>
-<table><thead><tr><th><strong>运算符类型</strong></th><th><strong>作用</strong></th></tr></thead><tbody>
+<div class="table-wrapper"><table><thead><tr><th><strong>运算符类型</strong></th><th><strong>作用</strong></th></tr></thead><tbody>
 <tr><td>算术运算符</td><td>用于处理四则运算</td></tr>
 <tr><td>赋值运算符</td><td>用于将表达式的值赋给变量</td></tr>
 <tr><td>比较运算符</td><td>用于表达式的比较，并返回一个真值或假值</td></tr>
 <tr><td>逻辑运算符</td><td>用于根据表达式的值返回真值或假值</td></tr>
 </tbody></table>
+</div>
 <h3 id="31-算术运算符"><a class="header" href="#31-算术运算符">3.1 算术运算符</a></h3>
 <p><strong>作用</strong>：用于处理四则运算 </p>
 <p>算术运算符包括以下符号：</p>
-<table><thead><tr><th><strong>运算符</strong></th><th><strong>术语</strong></th><th><strong>示例</strong></th><th><strong>结果</strong></th></tr></thead><tbody>
+<div class="table-wrapper"><table><thead><tr><th><strong>运算符</strong></th><th><strong>术语</strong></th><th><strong>示例</strong></th><th><strong>结果</strong></th></tr></thead><tbody>
 <tr><td>+</td><td>正号</td><td>+3</td><td>3</td></tr>
 <tr><td>-</td><td>负号</td><td>-3</td><td>-3</td></tr>
 <tr><td>+</td><td>加</td><td>10 + 5</td><td>15</td></tr>
@@ -714,6 +720,7 @@ int main() {
 <tr><td>--</td><td>前置递减</td><td>a=2; b=--a;</td><td>a=1; b=1;</td></tr>
 <tr><td>--</td><td>后置递减</td><td>a=2; b=a--;</td><td>a=1; b=2;</td></tr>
 </tbody></table>
+</div>
 <p><strong>示例1：</strong></p>
 <pre><code class="language-C++">//加减乘除
 int main() {
@@ -819,7 +826,7 @@ int main() {
 <h3 id="32-赋值运算符"><a class="header" href="#32-赋值运算符">3.2 赋值运算符</a></h3>
 <p>**作用：**用于将表达式的值赋给变量</p>
 <p>赋值运算符包括以下几个符号：</p>
-<table><thead><tr><th><strong>运算符</strong></th><th><strong>术语</strong></th><th><strong>示例</strong></th><th><strong>结果</strong></th></tr></thead><tbody>
+<div class="table-wrapper"><table><thead><tr><th><strong>运算符</strong></th><th><strong>术语</strong></th><th><strong>示例</strong></th><th><strong>结果</strong></th></tr></thead><tbody>
 <tr><td>=</td><td>赋值</td><td>a=2; b=3;</td><td>a=2; b=3;</td></tr>
 <tr><td>+=</td><td>加等于</td><td>a=0; a+=2;</td><td>a=2;</td></tr>
 <tr><td>-=</td><td>减等于</td><td>a=5; a-=3;</td><td>a=2;</td></tr>
@@ -827,6 +834,7 @@ int main() {
 <tr><td>/=</td><td>除等于</td><td>a=4; a/=2;</td><td>a=2;</td></tr>
 <tr><td>%=</td><td>模等于</td><td>a=3; a%2;</td><td>a=1;</td></tr>
 </tbody></table>
+</div>
 <p><strong>示例：</strong></p>
 <pre><code class="language-C++">int main() {
 
@@ -870,7 +878,7 @@ int main() {
 <h3 id="33-比较运算符"><a class="header" href="#33-比较运算符">3.3 比较运算符</a></h3>
 <p>**作用：**用于表达式的比较，并返回一个真值或假值</p>
 <p>比较运算符有以下符号：</p>
-<table><thead><tr><th><strong>运算符</strong></th><th><strong>术语</strong></th><th><strong>示例</strong></th><th><strong>结果</strong></th></tr></thead><tbody>
+<div class="table-wrapper"><table><thead><tr><th><strong>运算符</strong></th><th><strong>术语</strong></th><th><strong>示例</strong></th><th><strong>结果</strong></th></tr></thead><tbody>
 <tr><td>==</td><td>相等于</td><td>4 == 3</td><td>0</td></tr>
 <tr><td>!=</td><td>不等于</td><td>4 != 3</td><td>1</td></tr>
 <tr><td>&lt;</td><td>小于</td><td>4 &lt; 3</td><td>0</td></tr>
@@ -878,6 +886,7 @@ int main() {
 <tr><td>&lt;=</td><td>小于等于</td><td>4 &lt;= 3</td><td>0</td></tr>
 <tr><td>&gt;=</td><td>大于等于</td><td>4 &gt;= 1</td><td>1</td></tr>
 </tbody></table>
+</div>
 <p>示例：</p>
 <pre><code class="language-C++">int main() {
 
@@ -907,11 +916,12 @@ int main() {
 <h3 id="34-逻辑运算符"><a class="header" href="#34-逻辑运算符">3.4 逻辑运算符</a></h3>
 <p>**作用：**用于根据表达式的值返回真值或假值</p>
 <p>逻辑运算符有以下符号：</p>
-<table><thead><tr><th><strong>运算符</strong></th><th><strong>术语</strong></th><th><strong>示例</strong></th><th><strong>结果</strong></th></tr></thead><tbody>
+<div class="table-wrapper"><table><thead><tr><th><strong>运算符</strong></th><th><strong>术语</strong></th><th><strong>示例</strong></th><th><strong>结果</strong></th></tr></thead><tbody>
 <tr><td>!</td><td>非</td><td>!a</td><td>如果a为假，则!a为真；  如果a为真，则!a为假。</td></tr>
 <tr><td>&amp;&amp;</td><td>与</td><td>a &amp;&amp; b</td><td>如果a和b都为真，则结果为真，否则为假。</td></tr>
 <tr><td>||</td><td>或</td><td>a || b</td><td>如果a和b有一个为真，则结果为真，二者都为假时，结果为假。</td></tr>
 </tbody></table>
+</div>
 <p>**示例1：**逻辑非</p>
 <pre><code class="language-C++">//逻辑运算符  --- 非
 int main() {
@@ -1745,11 +1755,12 @@ int main() {
 <h4 id="533-二维数组应用案例"><a class="header" href="#533-二维数组应用案例"><strong>5.3.3 二维数组应用案例</strong></a></h4>
 <p><strong>考试成绩统计：</strong></p>
 <p>案例描述：有三名同学（张三，李四，王五），在一次考试中的成绩分别如下表，<strong>请分别输出三名同学的总成绩</strong></p>
-<table><thead><tr><th></th><th>语文</th><th>数学</th><th>英语</th></tr></thead><tbody>
+<div class="table-wrapper"><table><thead><tr><th></th><th>语文</th><th>数学</th><th>英语</th></tr></thead><tbody>
 <tr><td>张三</td><td>100</td><td>100</td><td>100</td></tr>
 <tr><td>李四</td><td>90</td><td>50</td><td>100</td></tr>
 <tr><td>王五</td><td>60</td><td>70</td><td>80</td></tr>
 </tbody></table>
+</div>
 <p><strong>参考答案：</strong></p>
 <pre><code class="language-C++">int main() {
 
@@ -2671,6 +2682,22 @@ int main() {
 
         </div>
 
+        <!-- Livereload script (if served using the cli tool) -->
+        <script type="text/javascript">
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
         <script type="text/javascript">
             window.playground_copyable = true;
         </script>
